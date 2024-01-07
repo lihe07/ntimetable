@@ -1,8 +1,400 @@
 [
   {
-    "name": "A",
     "attend": [
-      "A", "B"
-    ]
+      "Chinese 1",
+      "History",
+      "Geography",
+      "Politics",
+      "Other",
+      "Integrated English A",
+      "RW A",
+      "AP Chem",
+      "AP Phys C",
+      "AP Calc 1"
+    ],
+    "name": "A"
+  },
+  {
+    "attend": [
+      "Chinese 1",
+      "History",
+      "Geography",
+      "Politics",
+      "Other",
+      "Integrated English B",
+      "RW B",
+      "AP Chem",
+      "AP Phys C",
+      "AP Calc 1"
+    ],
+    "name": "B"
+  },
+  {
+    "attend": [
+      "Chinese 1",
+      "History",
+      "Geography",
+      "Politics",
+      "Other",
+      "Integrated English A",
+      "RW A",
+      "AP Eu",
+      "AP Phys C",
+      "AP Calc 1",
+      "AP Micro"
+    ],
+    "name": "C"
+  },
+  {
+    "attend": [
+      "Chinese 1",
+      "History",
+      "Geography",
+      "Politics",
+      "Other",
+      "Integrated English A",
+      "RW A",
+      "APUSH",
+      "AP Micro",
+      "Math"
+    ],
+    "name": "D"
+  },
+  {
+    "attend": [
+      "Chinese 1",
+      "History",
+      "Geography",
+      "Politics",
+      "Other",
+      "Integrated English A",
+      "RW A",
+      "AP Phys C",
+      "AP Calc 1"
+    ],
+    "name": "E"
+  },
+  {
+    "attend": [
+      "Chinese 1",
+      "History",
+      "Geography",
+      "Politics",
+      "Other",
+      "Integrated English B",
+      "RW B",
+      "AP Micro",
+      "AP Phys C",
+      "AP Calc 1"
+    ],
+    "name": "F"
+  },
+  {
+    "attend": [
+      "Chinese 1",
+      "History",
+      "Geography",
+      "Politics",
+      "Other",
+      "Integrated English B",
+      "RW B",
+      "AP Macro",
+      "AP Chem",
+      "AP Phys C",
+      "AP Calc 1",
+      "ENG"
+    ],
+    "name": "G"
+  },
+  {
+    "attend": [
+      "Chinese 1",
+      "History",
+      "Geography",
+      "Politics",
+      "Other",
+      "Integrated English B",
+      "RW B",
+      "Math",
+      "AP Art",
+      "APUSH",
+      "ENG"
+    ],
+    "name": "H"
+  },
+  {
+    "attend": [
+      "Chinese 1",
+      "History",
+      "Geography",
+      "Politics",
+      "Other",
+      "Integrated English B",
+      "RW B",
+      "AP Psyc",
+      "AP Calc 1",
+      "APUSH"
+    ],
+    "name": "I"
+  },
+  {
+    "attend": [
+      "Chinese 1",
+      "History",
+      "Geography",
+      "Politics",
+      "Other",
+      "Integrated English B",
+      "RW B",
+      "AP Bio",
+      "AP Phys C",
+      "AP Calc 1"
+    ],
+    "name": "J"
+  },
+  {
+    "attend": [
+      "Chinese 1",
+      "History",
+      "Geography",
+      "Politics",
+      "Other",
+      "Integrated English B",
+      "EFL",
+      "AP Bio",
+      "AP ES",
+      "AP Calc 1"
+    ],
+    "name": "K"
+  },
+  {
+    "attend": [
+      "Chinese 1",
+      "History",
+      "Geography",
+      "Politics",
+      "Other",
+      "Integrated English B",
+      "EFL",
+      "AP Micro",
+      "AP Phys C",
+      "AP Calc 1"
+    ],
+    "name": "L"
+  },
+  {
+    "attend": [
+      "Chinese 1",
+      "History",
+      "Geography",
+      "Politics",
+      "Other",
+      "Integrated English B",
+      "RW B",
+      "AP Micro",
+      "AP Phys C",
+      "APUSH",
+      "AP Calc 1"
+    ],
+    "name": "M"
+  },
+  {
+    "attend": [
+      "Chinese 1",
+      "History",
+      "Geography",
+      "Politics",
+      "Other",
+      "Integrated English A",
+      "RW A",
+      "AP Macro",
+      "AP Calc 1",
+      "AP Phys C",
+      "ENG"
+    ],
+    "name": "N"
+  },
+  {
+    "attend": [
+      "Chinese 2",
+      "Art",
+      "Other",
+      "Integrated English A",
+      "RW A",
+      "AP Lang",
+      "AP Calc 2",
+      "AP Bio",
+      "AP Macro"
+    ],
+    "name": "O"
+  },
+  {
+    "attend": [
+      "Chinese 2",
+      "Art",
+      "Other",
+      "Integrated English A",
+      "RW A",
+      "APUSH",
+      "AP Phys C",
+      "AP Calc 2"
+    ],
+    "name": "P"
+  },
+  {
+    "attend": [
+      "Chinese 2",
+      "Art",
+      "Other",
+      "Integrated English A",
+      "RW A",
+      "APUSH",
+      "AP Bio",
+      "AP Calc 2"
+    ],
+    "name": "R"
+  },
+  {
+    "attend": [
+      "Chinese 2",
+      "Art",
+      "Other",
+      "Integrated English B",
+      "EFL",
+      "AP Macro",
+      "AP Calc 2",
+      "AP Phys E"
+    ],
+    "name": "S"
+  },
+  {
+    "attend": [
+      "Chinese 2",
+      "Art",
+      "Other",
+      "Integrated English B",
+      "RW B",
+      "AP Phys C",
+      "AP Calc 2",
+      "AP Macro"
+    ],
+    "name": "Q"
+  },
+  {
+    "attend": [
+      "Chinese 2",
+      "Art",
+      "Other",
+      "Integrated English B",
+      "RW B",
+      "AP Macro",
+      "AP Calc 2",
+      "AP Bio"
+    ],
+    "name": "T"
+  },
+  {
+    "attend": [
+      "Chinese 2",
+      "Art",
+      "Other",
+      "Integrated English B",
+      "RW B",
+      "AP Eu",
+      "ENG",
+      "Math"
+    ],
+    "name": "U"
+  },
+  {
+    "attend": [
+      "Chinese 2",
+      "Art",
+      "Other",
+      "Integrated English B",
+      "EFL",
+      "AP Macro",
+      "Math"
+    ],
+    "name": "V"
+  },
+  {
+    "attend": [
+      "Chinese 2",
+      "Art",
+      "Other",
+      "Integrated English B",
+      "EFL",
+      "AP Calc 2",
+      "AP Phys C"
+    ],
+    "name": "W"
+  },
+  {
+    "attend": [
+      "Chinese 2",
+      "Art",
+      "Other",
+      "Integrated English B",
+      "EFL",
+      "AP Bio",
+      "AP Calc 2",
+      "APUSH"
+    ],
+    "name": "X"
+  },
+  {
+    "attend": [
+      "Chinese 2",
+      "Art",
+      "Other",
+      "Integrated English B",
+      "RW B",
+      "AP ES",
+      "AP Calc 2"
+    ],
+    "name": "Y"
+  },
+  {
+    "attend": [
+      "Chinese 2",
+      "Art",
+      "Other",
+      "Integrated English A",
+      "RW A",
+      "AP Phys C",
+      "AP Calc 2",
+      "AP Psyc",
+      "AP Macro"
+    ],
+    "name": "Z"
+  },
+  {
+    "attend": [
+      "Chinese 2",
+      "Art",
+      "Other",
+      "Integrated English B",
+      "EFL",
+      "AP Calc 2"
+    ],
+    "name": "A1"
+  },
+  {
+    "attend": [
+      "Chinese 2",
+      "Art",
+      "Other",
+      "Integrated English A",
+      "RW A",
+      "AP Art",
+      "AP Calc 2",
+      "AP Phys C"
+    ],
+    "name": "A2"
+  },
+  {
+    "attend": ["Chinese 2", "Art", "Other", "AP Calc 2", "APUSH", "AP Lang"],
+    "name": "A3"
   }
 ]

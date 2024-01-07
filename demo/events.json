@@ -1,13 +1,142 @@
 [
   {
-    "name": "A",
+    "name": "AP Chem",
     "num_per_week": 5,
-    "max_per_day": 1,
     "room_kind": "classroom"
   },
   {
-    "name": "B",
+    "name": "AP Phys C",
+    "num_per_week": 5,
+    "room_kind": "classroom"
+  },
+  {
+    "name": "AP Calc 1",
+    "num_per_week": 5,
+    "room_kind": "classroom"
+  },
+  {
+    "name": "AP Calc 2",
+    "num_per_week": 5,
+    "room_kind": "classroom"
+  },
+  {
+    "name": "APUSH",
+    "num_per_week": 4,
+    "room_kind": "classroom"
+  },
+  {
+    "name": "AP Eu",
+    "num_per_week": 4,
+    "room_kind": "classroom"
+  },
+  {
+    "name": "AP Art",
+    "num_per_week": 5,
+    "room_kind": "classroom"
+  },
+  {
+    "name": "AP Lang",
+    "num_per_week": 5,
+    "room_kind": "classroom"
+  },
+  {
+    "name": "AP Micro",
+    "num_per_week": 4,
+    "room_kind": "classroom"
+  },
+  {
+    "name": "AP Macro",
+    "num_per_week": 4,
+    "room_kind": "classroom"
+  },
+  {
+    "name": "AP Psyc",
+    "num_per_week": 5,
+    "room_kind": "classroom"
+  },
+  {
+    "name": "AP Bio",
+    "num_per_week": 5,
+    "room_kind": "classroom"
+  },
+  {
+    "name": "AP ES",
+    "num_per_week": 5,
+    "room_kind": "classroom"
+  },
+  {
+    "name": "Chinese 1",
     "num_per_week": 3,
+    "room_kind": "classroom"
+  },
+  {
+    "name": "Chinese 2",
+    "num_per_week": 3,
+    "room_kind": "classroom"
+  },
+  {
+    "name": "History",
+    "num_per_week": 2,
+    "room_kind": "classroom"
+  },
+  {
+    "name": "Politics",
+    "num_per_week": 2,
+    "room_kind": "classroom"
+  },
+  {
+    "name": "Geography",
+    "num_per_week": 5,
+    "room_kind": "classroom"
+  },
+  {
+    "name": "Integrated English A",
+    "num_per_week": 6,
+    "room_kind": "classroom"
+  },
+  {
+    "name": "Integrated English B",
+    "num_per_week": 6,
+    "room_kind": "classroom"
+  },
+  {
+    "name": "RW A",
+    "num_per_week": 3,
+    "room_kind": "classroom"
+  },
+  {
+    "name": "RW B",
+    "num_per_week": 3,
+    "room_kind": "classroom"
+  },
+  {
+    "name": "EFL",
+    "num_per_week": 3,
+    "room_kind": "classroom"
+  },
+  {
+    "name": "Art",
+    "num_per_week": 1,
+    "room_kind": "art"
+  },
+  {
+    "name": "Other",
+    "num_per_week": 4,
+    "room_kind": "classroom"
+  },
+  {
+    "name": "Math",
+    "num_per_week": 4,
+    "room_kind": "classroom"
+  },
+  {
+    "name": "ENG",
+    "num_per_week": 2,
+    "room_kind": "classroom"
+  },
+  {
+    "name": "AP Phys E",
+    "num_per_week": 5,
     "room_kind": "classroom"
   }
 ]

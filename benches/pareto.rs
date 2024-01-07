@@ -61,5 +61,5 @@ fn bench_mosa(c: &mut Criterion) {
     });
 }
 
-criterion_group!(benches, bench_mosa);
-criterion_main!(benches);
+criterion_group!(pareto, bench_mosa);
+criterion_main!(pareto);

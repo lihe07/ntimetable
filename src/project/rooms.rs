@@ -4,10 +4,10 @@ use std::{collections::HashMap, io::Read, path::Path};
 
 use crate::{fatal, must_open, utils};
 
-#[derive(Debug, PartialEq)]
+#[derive(Debug, Clone, Copy, PartialEq, Hash)]
 pub struct Room(usize);
 
-#[derive(Debug, PartialEq)]
+#[derive(Debug, Clone, Copy, PartialEq, Hash)]
 pub struct RoomKind(usize);
 
 #[derive(Debug)]
@@ -50,6 +50,10 @@ impl Rooms {
 
     pub fn len(&self) -> usize {
         self.names.len()
+    }
+
+    pub fn iter_all(&self) -> impl Iterator<Item = Room> + Clone {
+        (0..self.len()).map(|e| Room(e))
     }
 }
 
@@ -123,11 +127,7 @@ pub fn parse_rooms<P: AsRef<Path>>(path: P) -> Rooms {
         })
         .collect();
 
-    let mut kind_name_to_id = HashMap::new();
-
-    for (k, v) in utils::int_encode(kinds.clone()).iter() {
-        kind_name_to_id.insert(*k, RoomKind(*v));
-    }
+    let kind_name_to_id = utils::int_encode(kinds.clone(), |e| RoomKind(e));
 
     Rooms {
         adjacent: mat,

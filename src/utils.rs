@@ -22,12 +22,15 @@ macro_rules! must_open {
     }};
 }
 
-pub fn int_encode<T: Eq + Hash>(mut keys: Vec<T>) -> HashMap<T, usize> {
+pub fn int_encode<K: Eq + Hash, V, F: Fn(usize) -> V>(
+    mut keys: Vec<K>,
+    wrapper: F,
+) -> HashMap<K, V> {
     let mut map = HashMap::new();
     keys.dedup();
 
     for (i, key) in keys.into_iter().enumerate() {
-        map.insert(key, i);
+        map.insert(key, wrapper(i));
     }
 
     map

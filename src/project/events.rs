@@ -1,14 +1,20 @@
-use std::{collections::HashMap, path::Path};
+use std::{
+    collections::{HashMap, HashSet},
+    path::Path,
+};
 
 use rand::seq::SliceRandom;
 use serde::Deserialize;
 
 use crate::{fatal, must_open, utils};
 
-use super::rooms::{RoomKind, Rooms};
+use super::{
+    people::{People, Person},
+    rooms::{RoomKind, Rooms},
+};
 
 fn default_max_per_day() -> usize {
-    1
+    2
 }
 
 #[derive(Debug, Clone, Deserialize)]
@@ -20,12 +26,90 @@ struct RawEvent {
     room_kind: String,
 }
 
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
 pub struct Event(usize);
 
+#[derive(Debug, Clone, Copy, PartialEq)]
+pub struct EventKind(usize);
+
+#[derive(Debug)]
 pub struct Events {
-    names: Vec<String>,
+    kinds: Vec<EventKind>,
     max_per_day: Vec<usize>,
     room_kind: Vec<RoomKind>,
+    kind_name_to_id: HashMap<String, EventKind>,
+
+    /// This field is updated lazily
+    attendees: Vec<HashSet<Person>>,
+}
+
+impl Events {
+    pub fn kind_name_to_id(&self, name: &str) -> EventKind {
+        if let Some(e) = self.kind_name_to_id.get(name) {
+            *e
+        } else {
+            fatal!("Invalid event: {name}");
+        }
+    }
+
+    pub fn events_with_kind(&self, kind: EventKind) -> Vec<Event> {
+        let mut events = vec![];
+        for (i, k) in self.kinds.iter().enumerate() {
+            if *k == kind {
+                events.push(Event(i))
+            }
+        }
+
+        events
+    }
+
+    pub fn room_kind(&self, event: &Event) -> RoomKind {
+        self.room_kind[event.0]
+    }
+
+    pub fn kind(&self, event: &Event) -> EventKind {
+        self.kinds[event.0]
+    }
+
+    pub fn max_per_day(&self, event: &Event) -> usize {
+        self.max_per_day[event.0]
+    }
+
+    pub fn len(&self) -> usize {
+        self.kinds.len()
+    }
+
+    pub fn iter_all(&self) -> impl Iterator<Item = Event> + Clone {
+        (0..self.len()).map(|e| Event(e))
+    }
+
+    pub fn fill_attendees(&mut self, people: &People) {
+        if !self.attendees.is_empty() {
+            println!("Warn: Events attendees might already been filled!");
+            self.attendees.clear();
+        }
+
+        for _ in 0..self.len() {
+            self.attendees.push(HashSet::new());
+        }
+
+        for i in 0..people.len() {
+            for e in people.events_attended_by(Person(i)) {
+                self.attendees[e.0].insert(Person(i));
+            }
+        }
+    }
+
+    pub fn event_attendees(&self, e: Event) -> &HashSet<Person> {
+        &self.attendees[e.0]
+    }
+
+    pub fn have_people_conflict(&self, e1: Event, e2: Event) -> bool {
+        self.event_attendees(e1)
+            .intersection(self.event_attendees(e2))
+            .count()
+            > 0
+    }
 }
 
 pub fn parse_events<P: AsRef<Path>>(path: P, rooms: &Rooms) -> Events {
@@ -37,6 +121,9 @@ pub fn parse_events<P: AsRef<Path>>(path: P, rooms: &Rooms) -> Events {
         fatal!("Failed to parse events.json: {e}");
     }
     let events = events.unwrap();
+    let kind_name_to_id = utils::int_encode(events.iter().map(|e| e.name.clone()).collect(), |e| {
+        EventKind(e)
+    });
 
     // Expand
     let mut expanded_events = vec![];
@@ -49,12 +136,20 @@ pub fn parse_events<P: AsRef<Path>>(path: P, rooms: &Rooms) -> Events {
     // Shuffle
     expanded_events.shuffle(&mut rand::thread_rng());
 
-    let mut names = vec![];
     let mut max_per_day = vec![];
-    for (i, e) in expanded_events.iter().enumerate() {
-        names.push(e.name.clone());
+    let mut room_kind = vec![];
+    let mut kinds = vec![];
+    for e in expanded_events {
+        kinds.push(kind_name_to_id.get(&e.name).unwrap().clone());
         max_per_day.push(e.max_per_day);
+        room_kind.push(rooms.kind_name_to_id(&e.room_kind));
     }
 
-    todo!()
+    Events {
+        kinds,
+        max_per_day,
+        room_kind,
+        kind_name_to_id,
+        attendees: vec![],
+    }
 }
