@@ -1,0 +1,13 @@
+[
+  {
+    "name": "A",
+    "num_per_week": 5,
+    "max_per_day": 1,
+    "room_kind": "classroom"
+  },
+  {
+    "name": "B",
+    "num_per_week": 3,
+    "room_kind": "classroom"
+  }
+]
