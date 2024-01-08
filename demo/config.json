@@ -2,5 +2,7 @@
   "days": 5,
   "slots_per_day": 10,
   "max_iter": 1000,
-  "max_iter_initial": 1000
+  "max_iter_initial": 1000,
+  "tabu_size": 50,
+  "initial_method": "tabu"
 }

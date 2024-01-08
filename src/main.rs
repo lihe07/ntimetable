@@ -1,8 +1,10 @@
 pub mod initial;
+mod neighborhoods;
 mod optimize;
 pub mod pareto;
 pub mod project;
 mod score;
+mod tsp;
 mod utils;
 
 use clap::Parser;
@@ -20,5 +22,5 @@ fn main() {
 
     dbg!(&proj);
 
-    initial::find_initial_solution_tabu(&proj, true);
+    initial::find_initial_solution(&proj, true);
 }

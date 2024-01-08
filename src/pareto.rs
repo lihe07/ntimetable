@@ -5,7 +5,9 @@ use rand::seq::SliceRandom;
 pub trait CanDominate {
     fn dominates(&self, other: &Self) -> bool;
     fn compare_first_element(&self, other: &Self) -> Ordering;
-    fn avg(&self) -> f32;
+    fn sum(&self) -> f32 {
+        -1.0
+    }
 }
 
 // fn dominates<T: Ord>(this: T, other: T) -> bool {
@@ -90,7 +92,10 @@ pub fn kung_recursive<T: CanDominate>(mut data: Vec<T>) -> Vec<T> {
     skyline
 }
 
-pub fn kung_recursive_mosa<T: CanDominate>(mut data: Vec<T>, temp: f32) -> Vec<T> {
+pub fn kung_recursive_mosa<T: CanDominate + std::fmt::Debug>(
+    mut data: Vec<T>,
+    temp: f32,
+) -> Vec<T> {
     if data.len() == 1 {
         return data;
     }
@@ -112,12 +117,12 @@ pub fn kung_recursive_mosa<T: CanDominate>(mut data: Vec<T>, temp: f32) -> Vec<T
     let mut skyline = Vec::new();
 
     for l in left_skyline {
-        let mut energy = 0.0;
-        let avg = l.avg();
+        let mut energy = 0.0; // Lower is better
+        let sum = l.sum();
 
         for r in &right_skyline {
             if r.dominates(&l) {
-                energy += r.avg() - avg;
+                energy += r.sum() - sum;
             }
         }
         let rand: f32 = rand::random();
@@ -155,9 +160,24 @@ pub fn random_frontline<T: CanDominate + PartialEq>(mut solutions: Vec<T>, max: 
     solutions
 }
 
+/// The higher the temp, the higher prob that a inferior solution will be accepted
+/// Temp shall be at same level of sum of criterion
+pub fn random_mosa<T: CanDominate + PartialEq + std::fmt::Debug>(
+    mut solutions: Vec<T>,
+    max: usize,
+    temp: f32,
+) -> Vec<T> {
+    solutions.dedup();
+    solutions = kung_recursive_mosa(solutions, temp);
+    let mut rng = rand::thread_rng();
+    solutions.shuffle(&mut rng);
+    solutions.truncate(max);
+    solutions
+}
+
 mod test {
     use super::*;
-    use rand::Rng;
+    use itertools::Itertools;
 
     #[derive(Debug, PartialEq)]
     struct Point {
@@ -173,10 +193,6 @@ mod test {
 
         fn compare_first_element(&self, other: &Self) -> Ordering {
             self.a.partial_cmp(&other.a).unwrap()
-        }
-
-        fn avg(&self) -> f32 {
-            0.0
         }
     }
 
@@ -223,8 +239,8 @@ mod test {
         assert!(strings.iter().filter(|&s| s == "1,3,1").count() == 1); // Dedup
     }
 
-    #[derive(Clone)]
-    struct MOSA(Vec<f32>);
+    #[derive(Debug, Clone, PartialEq, Eq)]
+    struct MOSA(Vec<i32>);
 
     impl CanDominate for MOSA {
         fn dominates(&self, other: &Self) -> bool {
@@ -240,8 +256,38 @@ mod test {
             self.0[0].partial_cmp(&other.0[0]).unwrap()
         }
 
-        fn avg(&self) -> f32 {
-            self.0.iter().sum::<f32>() / self.0.len() as f32
+        fn sum(&self) -> f32 {
+            self.0.iter().sum::<i32>() as f32
         }
+    }
+
+    #[test]
+    fn test_mosa() {
+        let original = vec![
+            MOSA(vec![1, 1, 1]),
+            MOSA(vec![2, 2, 2]),
+            MOSA(vec![1, 3, 1]),
+            MOSA(vec![1, 3, 1]),
+        ];
+
+        let data = random_mosa(original.clone(), 3, 3.0);
+
+        let strings: Vec<String> = data
+            .iter()
+            .map(|v| v.0.iter().map(|i| format!("{i}")).join(","))
+            .collect();
+
+        assert!(strings.iter().filter(|&s| s == "2,2,2").count() == 1);
+        assert!(strings.iter().filter(|&s| s == "1,3,1").count() == 1); // Dedup
+
+        for _ in 0..500 {
+            let data = random_mosa(original.clone(), 3, 3.0);
+
+            if data.iter().filter(|s| s.0 == vec![1, 1, 1]).count() == 1 {
+                return;
+            }
+        }
+
+        panic!("That's pretty uncommon");
     }
 }

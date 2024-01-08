@@ -5,11 +5,15 @@ use std::{collections::VecDeque, io::Write, ops::Range};
 use itertools::Itertools;
 use rand::{seq::SliceRandom, thread_rng};
 
-use crate::project::{Event, Project, Room};
+use crate::{
+    fatal,
+    optimize::TIMEMAP,
+    project::{Event, Project},
+};
 
 #[derive(Clone, Debug)]
 struct InitialSolution {
-    events: Vec<Vec<(Event, Room)>>,
+    events: TIMEMAP,
     eject_list: Vec<Event>,
 }
 
@@ -120,10 +124,7 @@ fn find_local_best(project: &Project, x: &mut InitialSolution) -> InitialSolutio
     local_best
 }
 
-pub fn find_initial_solution_tabu(
-    project: &Project,
-    verbose: bool,
-) -> Option<Vec<Vec<(Event, Room)>>> {
+pub fn find_initial_solution_tabu(project: &Project, verbose: bool) -> Option<TIMEMAP> {
     let mut x = InitialSolution::new(
         project.events.iter_all().collect(),
         project.config.iter_slots(),
@@ -131,7 +132,7 @@ pub fn find_initial_solution_tabu(
     let mut best = x.clone();
 
     // let mut tabu: FxHashSet<InitialSolution> = FxHashSet::default();
-    let mut tabu = VecDeque::with_capacity(10);
+    let mut tabu = VecDeque::with_capacity(project.config.tabu_size);
 
     for _ in 0..project.config.max_iter_initial {
         // let mut local_best = Mutex::new(x.clone());
@@ -160,7 +161,7 @@ pub fn find_initial_solution_tabu(
 
         if !tabu.contains(&local_best) {
             x = local_best.clone();
-            if tabu.len() == 10 {
+            if tabu.len() == project.config.tabu_size {
                 tabu.pop_front();
             }
             tabu.push_back(local_best);
@@ -180,10 +181,7 @@ pub fn find_initial_solution_tabu(
     }
 }
 
-pub fn find_initial_solution_constructive(
-    project: &Project,
-    verbose: bool,
-) -> Option<Vec<Vec<(Event, Room)>>> {
+pub fn find_initial_solution_constructive(project: &Project, verbose: bool) -> Option<TIMEMAP> {
     let mut x = InitialSolution::new(
         project.events.iter_all().collect(),
         project.config.iter_slots(),
@@ -215,5 +213,46 @@ pub fn find_initial_solution_constructive(
         Some(best.events)
     } else {
         None
+    }
+}
+
+pub fn find_initial_solution(project: &Project, verbose: bool) -> Option<TIMEMAP> {
+    let f = match project.config.initial_method.as_str() {
+        "tabu" => find_initial_solution_tabu,
+
+        "constructive" => find_initial_solution_constructive,
+        _ => fatal!("Invalid initial method"),
+    };
+
+    for i in 0..project.config.initial_attempts {
+        if let Some(s) = f(&project, verbose) {
+            return Some(s);
+        } else {
+            println!(
+                "Attempts {} / {} failed",
+                i + 1,
+                project.config.initial_attempts
+            );
+        }
+    }
+    None
+}
+
+mod test {
+    use super::*;
+
+    #[test]
+    fn test_find_initial_solution() {
+        let project = Project::parse("./demo");
+
+        assert!(find_initial_solution_tabu(&project, true).is_some());
+
+        for _ in 0..5 {
+            if find_initial_solution_constructive(&project, true).is_some() {
+                return;
+            }
+        }
+
+        panic!("find_initial_solution_constructive failed")
     }
 }

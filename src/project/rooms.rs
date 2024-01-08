@@ -5,7 +5,7 @@ use std::{collections::HashMap, io::Read, path::Path};
 use crate::{fatal, must_open, utils};
 
 #[derive(Debug, Clone, Copy, PartialEq, Hash)]
-pub struct Room(usize);
+pub struct Room(pub usize);
 
 #[derive(Debug, Clone, Copy, PartialEq, Hash)]
 pub struct RoomKind(usize);

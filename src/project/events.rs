@@ -29,8 +29,8 @@ struct RawEvent {
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
 pub struct Event(usize);
 
-#[derive(Debug, Clone, Copy, PartialEq)]
-pub struct EventKind(usize);
+#[derive(Debug, Clone, Copy, PartialEq, Hash, Eq)]
+pub struct EventKind(pub usize);
 
 #[derive(Debug)]
 pub struct Events {
@@ -75,8 +75,12 @@ impl Events {
         self.max_per_day[event.0]
     }
 
-    pub fn len(&self) -> usize {
+    pub fn kinds_len(&self) -> usize {
         self.kinds.len()
+    }
+
+    pub fn len(&self) -> usize {
+        self.max_per_day.len()
     }
 
     pub fn iter_all(&self) -> impl Iterator<Item = Event> + Clone {
