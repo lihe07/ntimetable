@@ -1,10 +1,7 @@
-use std::sync::Arc;
-
+use crate::optimize::Solution;
 use crate::project::Project;
 
-use crate::optimize::Solution;
-
-pub fn room_only(s: Solution, project: Arc<Project>, tx: crossbeam::channel::Sender<Solution>) {
+pub fn room_only(s: Solution, project: &Project, tx: crossbeam::channel::Sender<Solution>) {
     let events = s.iter_all();
 
     for (i, (t1, e1, r1)) in events.iter().enumerate() {
@@ -53,7 +50,7 @@ pub fn room_only(s: Solution, project: Arc<Project>, tx: crossbeam::channel::Sen
     }
 }
 
-pub fn time_only(s: Solution, project: Arc<Project>, tx: crossbeam::channel::Sender<Solution>) {
+pub fn time_only(s: Solution, project: &Project, tx: crossbeam::channel::Sender<Solution>) {
     let events = s.iter_all();
 
     for (i, (t1, e1, r1)) in events.iter().enumerate() {
@@ -97,7 +94,7 @@ pub fn time_only(s: Solution, project: Arc<Project>, tx: crossbeam::channel::Sen
     }
 }
 
-pub fn time_and_room(s: Solution, project: Arc<Project>, tx: crossbeam::channel::Sender<Solution>) {
+pub fn time_and_room(s: Solution, project: &Project, tx: crossbeam::channel::Sender<Solution>) {
     let events = s.iter_all();
 
     for (i, (t1, e1, r1)) in events.iter().enumerate() {
@@ -160,11 +157,10 @@ mod test {
         sol.fill_counter(&proj);
 
         let (tx, rx) = crossbeam::channel::unbounded();
-        let proj = Arc::new(proj);
 
-        time_and_room(sol.clone(), proj.clone(), tx.clone());
-        time_only(sol.clone(), proj.clone(), tx.clone());
-        room_only(sol, proj.clone(), tx);
+        time_and_room(sol.clone(), &proj, tx.clone());
+        time_only(sol.clone(), &proj, tx.clone());
+        room_only(sol, &proj, tx);
 
         let solutions: Vec<Solution> = rx.iter().collect();
 

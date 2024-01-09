@@ -1,26 +1,33 @@
 use criterion::{black_box, criterion_group, criterion_main, Criterion};
 use crossbeam::channel::unbounded;
-use ntimetable::project::Project;
+use ntimetable::{
+    neighborhoods::{greedy_room, relocation, swap},
+    project::Project,
+};
+
+macro_rules! bench_function {
+    ($c:expr, $s:expr, $project:expr, $n:tt, $f:expr) => {
+        $c.bench_function($n, |b| {
+            b.iter(|| {
+                let (tx, _rx) = unbounded();
+                $f($s.clone(), &$project, tx);
+            });
+        });
+    };
+}
 
 fn bench_neighborhoods(c: &mut Criterion) {
     let project = Project::parse("./demo");
 
     let s = ntimetable::initial::find_initial_solution(&project, false).unwrap();
-    let s = ntimetable::optimize::Solution::new(s);
+    let mut s = ntimetable::optimize::Solution::new(s);
+    s.fill_counter(&project);
 
-    c.bench_function("relocation", |b| {
-        b.iter(|| {
-            let (tx, _rx) = unbounded();
-            ntimetable::neighborhoods::relocation::neighborhoods(s.clone(), &project, tx);
-        });
-    });
-
-    c.bench_function("greedy_room", |b| {
-        b.iter(|| {
-            let (tx, _rx) = unbounded();
-            ntimetable::neighborhoods::greedy_room::neighborhoods(s.clone(), &project, tx);
-        });
-    });
+    bench_function!(c, s, project, "nhd_relocation", relocation::neighborhoods);
+    bench_function!(c, s, project, "nhd_swap_room_only", swap::room_only);
+    bench_function!(c, s, project, "nhd_swap_time_only", swap::time_only);
+    bench_function!(c, s, project, "nhd_swap_time_and_room", swap::time_and_room);
+    bench_function!(c, s, project, "nhd_greedy_room", greedy_room::neighborhoods);
 }
 
 criterion_group!(neighborhoods, bench_neighborhoods);
