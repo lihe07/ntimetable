@@ -15,6 +15,7 @@ pub struct Project {
     pub rooms: rooms::Rooms,
     pub events: events::Events,
     pub people: people::People,
+    pub criteria: crate::criteria::Criteria,
 }
 
 impl Debug for Project {
@@ -42,6 +43,7 @@ impl Project {
             rooms,
             events,
             people,
+            criteria: crate::criteria::parse_criteria(path),
         }
     }
 }

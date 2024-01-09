@@ -1,9 +1,9 @@
+mod criteria;
 pub mod initial;
-mod neighborhoods;
-mod optimize;
+pub mod neighborhoods;
+pub mod optimize;
 pub mod pareto;
 pub mod project;
-mod score;
 mod tsp;
 mod utils;
 

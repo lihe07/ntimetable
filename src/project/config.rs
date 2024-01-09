@@ -14,7 +14,7 @@ fn default_initial_attempts() -> usize {
 
 #[derive(Debug, Deserialize)]
 pub struct Config {
-    slots_per_day: usize,
+    pub slots_per_day: usize,
     days: usize,
 
     #[serde(skip)]
@@ -34,6 +34,10 @@ pub struct Config {
 impl Config {
     pub fn iter_slots(&self) -> Range<usize> {
         0..self.num_slots
+    }
+
+    pub fn offset_in_day(&self, t: usize) -> usize {
+        t % self.slots_per_day
     }
 
     pub fn slots_to_day(&self, t: usize) -> usize {

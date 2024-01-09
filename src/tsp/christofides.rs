@@ -49,7 +49,7 @@ fn prim_mst(adj: &Vec<Vec<i32>>) -> Vec<Vec<(usize, i32)>> {
 
     min_heap.push((Reverse(0), 0)); // (Reverse(weight), vertex)
 
-    while let Some((Reverse(weight), u)) = min_heap.pop() {
+    while let Some((_, u)) = min_heap.pop() {
         if visited[u] {
             continue;
         }

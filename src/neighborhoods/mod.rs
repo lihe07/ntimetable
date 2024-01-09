@@ -1,4 +1,4 @@
-mod greedy_room;
-mod greedy_time;
-mod relocation;
-mod swap;
+pub mod greedy_room;
+pub mod greedy_time;
+pub mod relocation;
+pub mod swap;

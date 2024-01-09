@@ -27,7 +27,7 @@ struct RawEvent {
 }
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
-pub struct Event(usize);
+pub struct Event(pub usize);
 
 #[derive(Debug, Clone, Copy, PartialEq, Hash, Eq)]
 pub struct EventKind(pub usize);
@@ -38,6 +38,7 @@ pub struct Events {
     max_per_day: Vec<usize>,
     room_kind: Vec<RoomKind>,
     kind_name_to_id: HashMap<String, EventKind>,
+    kind_id_to_name: HashMap<EventKind, String>,
 
     /// This field is updated lazily
     attendees: Vec<HashSet<Person>>,
@@ -63,12 +64,27 @@ impl Events {
         events
     }
 
+    pub fn events_with_room_kind(&self, kind: RoomKind) -> HashSet<Event> {
+        let mut events = HashSet::new();
+        for (i, k) in self.room_kind.iter().enumerate() {
+            if *k == kind {
+                events.insert(Event(i));
+            }
+        }
+
+        events
+    }
+
     pub fn room_kind(&self, event: &Event) -> RoomKind {
         self.room_kind[event.0]
     }
 
     pub fn kind(&self, event: &Event) -> EventKind {
         self.kinds[event.0]
+    }
+
+    pub fn kind_name(&self, event: &Event) -> &str {
+        self.kind_id_to_name.get(&self.kind(event)).unwrap()
     }
 
     pub fn max_per_day(&self, event: &Event) -> usize {
@@ -129,6 +145,11 @@ pub fn parse_events<P: AsRef<Path>>(path: P, rooms: &Rooms) -> Events {
         EventKind(e)
     });
 
+    let kind_id_to_name: HashMap<EventKind, String> = kind_name_to_id
+        .iter()
+        .map(|(k, v)| (v.clone(), k.clone()))
+        .collect();
+
     // Expand
     let mut expanded_events = vec![];
     for e in events {
@@ -154,6 +175,7 @@ pub fn parse_events<P: AsRef<Path>>(path: P, rooms: &Rooms) -> Events {
         max_per_day,
         room_kind,
         kind_name_to_id,
+        kind_id_to_name,
         attendees: vec![],
     }
 }

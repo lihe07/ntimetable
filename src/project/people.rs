@@ -30,6 +30,10 @@ impl People {
     pub fn len(&self) -> usize {
         self.names.len()
     }
+
+    pub fn iter_all(&self) -> impl Iterator<Item = Person> {
+        (0..self.len()).map(|p| Person(p))
+    }
 }
 
 pub fn parse_people<P: AsRef<Path>>(path: P, events: &Events) -> People {

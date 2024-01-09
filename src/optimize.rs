@@ -1,4 +1,4 @@
-use std::collections::HashSet;
+use std::{borrow::BorrowMut, collections::HashSet};
 
 use rand::{seq::SliceRandom, thread_rng};
 
@@ -19,6 +19,7 @@ impl Solution {
             counter: vec![],
         }
     }
+
     pub fn iter_all(&self) -> Vec<(usize, Event, Room)> {
         let mut events = vec![];
 
@@ -29,6 +30,10 @@ impl Solution {
         }
 
         events
+    }
+
+    pub fn inner(&self) -> &TIMEMAP {
+        &self.events
     }
 
     pub fn iter_all_shuffle(&self) -> Vec<(usize, Event, Room)> {
@@ -64,7 +69,37 @@ impl Solution {
     }
 
     pub fn events_in_slot_mut(&mut self, t: usize) -> &mut Vec<(Event, Room)> {
-        self.events[t].as_mut()
+        self.events[t].borrow_mut()
+    }
+
+    pub fn events_of_day(&self, day: usize, project: &Project) -> Vec<(usize, Event, Room)> {
+        let mut events: Vec<(usize, Event, Room)> = vec![];
+
+        for t in project.config.slots_of_day(day) {
+            // events.extend(self.events_in_slot_mut(t).iter().map(|(e, r)| (t, *e, *r)));
+            events.extend(self.events[t].iter().map(|(e, r)| (t, *e, *r)));
+        }
+
+        events
+    }
+
+    pub fn events_of_day_drain(
+        &mut self,
+        day: usize,
+        project: &Project,
+    ) -> Vec<(usize, Event, Room)> {
+        let mut events: Vec<(usize, Event, Room)> = vec![];
+
+        for t in project.config.slots_of_day(day) {
+            // events.extend(self.events_in_slot_mut(t).iter().map(|(e, r)| (t, *e, *r)));
+            events.extend(self.events[t].drain(..).map(|(e, r)| (t, e, r)));
+        }
+
+        events
+    }
+
+    pub fn events_in_slot_drain(&mut self, t: usize) -> Vec<(Event, Room)> {
+        self.events[t].drain(..).collect()
     }
 
     pub fn event_can_not_fit_in(&self, e: &Event, r: &Room, t: usize, project: &Project) -> bool {
@@ -83,7 +118,8 @@ impl Solution {
         false
     }
 
-    pub fn is_valid(&self, project: &Project) -> Result<(), String> {
+    pub fn is_valid(&mut self, project: &Project) -> Result<(), String> {
+        self.fill_counter(project);
         let mut seen = HashSet::new();
 
         for (_, e, _) in self.iter_all() {
@@ -91,6 +127,13 @@ impl Solution {
                 return Err(format!("Multiple event: {:?}", e));
             }
             seen.insert(e);
+        }
+
+        if seen.len() != project.events.len() {
+            return Err(format!(
+                "Some events missing: {}",
+                project.events.len() - seen.len()
+            ));
         }
 
         let mut event_kind_and_max_per_day = HashSet::new();
@@ -175,5 +218,9 @@ mod test {
         sol.fill_counter(&proj);
 
         assert_eq!(sol.same_kind_events(0, test_kind), 3);
+
+        sol.events_of_day_drain(0, &proj);
+
+        assert_eq!(sol.events_of_day_drain(0, &proj).len(), 0);
     }
 }

@@ -4,7 +4,7 @@ use criterion::{black_box, criterion_group, criterion_main, Criterion};
 use ntimetable::pareto::*;
 use rand::{Rng, SeedableRng};
 
-#[derive(Clone)]
+#[derive(Debug, Clone)]
 struct MOSA(Vec<f32>);
 
 impl CanDominate for MOSA {
@@ -14,7 +14,6 @@ impl CanDominate for MOSA {
                 return false;
             }
         }
-
         true
     }
 
@@ -22,8 +21,8 @@ impl CanDominate for MOSA {
         self.0[0].partial_cmp(&other.0[0]).unwrap()
     }
 
-    fn avg(&self) -> f32 {
-        self.0.iter().sum::<f32>() / self.0.len() as f32
+    fn sum(&self) -> f32 {
+        self.0.iter().sum()
     }
 }
 

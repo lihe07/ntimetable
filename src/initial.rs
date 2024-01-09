@@ -219,7 +219,6 @@ pub fn find_initial_solution_constructive(project: &Project, verbose: bool) -> O
 pub fn find_initial_solution(project: &Project, verbose: bool) -> Option<TIMEMAP> {
     let f = match project.config.initial_method.as_str() {
         "tabu" => find_initial_solution_tabu,
-
         "constructive" => find_initial_solution_constructive,
         _ => fatal!("Invalid initial method"),
     };
@@ -227,7 +226,7 @@ pub fn find_initial_solution(project: &Project, verbose: bool) -> Option<TIMEMAP
     for i in 0..project.config.initial_attempts {
         if let Some(s) = f(&project, verbose) {
             return Some(s);
-        } else {
+        } else if verbose {
             println!(
                 "Attempts {} / {} failed",
                 i + 1,
@@ -239,16 +238,31 @@ pub fn find_initial_solution(project: &Project, verbose: bool) -> Option<TIMEMAP
 }
 
 mod test {
+    use crate::optimize::Solution;
+
     use super::*;
 
     #[test]
-    fn test_find_initial_solution() {
+    fn test_find_initial_solution_tabu() {
         let project = Project::parse("./demo");
 
-        assert!(find_initial_solution_tabu(&project, true).is_some());
+        for _ in 0..5 {
+            if let Some(s) = find_initial_solution_tabu(&project, true) {
+                Solution::new(s).is_valid(&project).unwrap();
+                return;
+            }
+        }
+
+        panic!("find_initial_solution_tabu failed")
+    }
+
+    #[test]
+    fn test_find_initial_solution_constructive() {
+        let project = Project::parse("./demo");
 
         for _ in 0..5 {
-            if find_initial_solution_constructive(&project, true).is_some() {
+            if let Some(s) = find_initial_solution_constructive(&project, true) {
+                Solution::new(s).is_valid(&project).unwrap();
                 return;
             }
         }

@@ -1,13 +1,17 @@
 // Code for rooms graph
 
-use std::{collections::HashMap, io::Read, path::Path};
+use std::{
+    collections::{HashMap, HashSet},
+    io::Read,
+    path::Path,
+};
 
 use crate::{fatal, must_open, utils};
 
-#[derive(Debug, Clone, Copy, PartialEq, Hash)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
 pub struct Room(pub usize);
 
-#[derive(Debug, Clone, Copy, PartialEq, Hash)]
+#[derive(Debug, Clone, Copy, PartialEq, Hash, Eq)]
 pub struct RoomKind(usize);
 
 #[derive(Debug)]
@@ -15,6 +19,7 @@ pub struct Rooms {
     names: Vec<String>,
     adjacent: Vec<Vec<i32>>,
     kinds: Vec<RoomKind>,
+    set_kinds: HashSet<RoomKind>,
     kind_name_to_id: HashMap<String, RoomKind>,
 }
 
@@ -26,6 +31,10 @@ impl Rooms {
     /// Get the kind id of a room
     pub fn room_kind(&self, r: &Room) -> RoomKind {
         self.kinds[r.0]
+    }
+
+    pub fn iter_kinds(&self) -> impl Iterator<Item = &RoomKind> + Clone {
+        self.set_kinds.iter()
     }
 
     pub fn room_name(&self, r: &Room) -> &str {
@@ -129,6 +138,10 @@ pub fn parse_rooms<P: AsRef<Path>>(path: P) -> Rooms {
 
     let kind_name_to_id = utils::int_encode(kinds.clone(), |e| RoomKind(e));
 
+    let mut set_kinds = HashSet::new();
+
+    set_kinds.extend(kind_name_to_id.values());
+
     Rooms {
         adjacent: mat,
         names: names_row,
@@ -136,6 +149,7 @@ pub fn parse_rooms<P: AsRef<Path>>(path: P) -> Rooms {
             .iter()
             .map(|e| *kind_name_to_id.get(e).unwrap())
             .collect(),
+        set_kinds,
         kind_name_to_id,
     }
 }

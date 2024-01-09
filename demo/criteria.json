@@ -1,0 +1,29 @@
+{
+  "event_time_distance": [
+    {
+      "kind": "min",
+      "event": "Integrated English B",
+      "time": 0
+    },
+    {
+      "kind": "min",
+      "event": "Integrated English A",
+      "time": 0
+    }
+  ],
+  "events_distance": [
+    {
+      "events": ["AP Chem", "AP Phys C"],
+      "kind": "max"
+    },
+    {
+      "events": ["Politics", "History", "Geography", "Chinese 1", "Chinese 2"],
+      "kind": "max"
+    }
+  ],
+  "room_distance": [
+    {
+      "key": "value"
+    }
+  ]
+}
