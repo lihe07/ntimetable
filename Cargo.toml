@@ -36,6 +36,7 @@ clap = { version = "4.4.13", features = ["derive"] }
 colored = "2.1.0"
 comfy-table = "7.1.0"
 crossbeam = { version = "0.8.3", features = ["crossbeam-channel"] }
+enum_dispatch = "0.3.12"
 itertools = "0.12.0"
 rand = { version = "0.8.5" }
 rayon = "1.8.0"
@@ -44,3 +45,6 @@ rustc-hash = "1.1.0"
 serde = { version = "1.0.194", features = ["derive"] }
 serde_json = { version = "1.0.111", features = ["raw_value"] }
 toml = "0.8.8"
+
+[target.'cfg(not(target_env = "msvc"))'.dependencies]
+tikv-jemallocator = "0.5"

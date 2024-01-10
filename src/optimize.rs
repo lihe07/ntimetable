@@ -1,15 +1,28 @@
-use std::{borrow::BorrowMut, collections::HashSet};
+use std::{borrow::BorrowMut, collections::HashSet, io::Write, sync::mpsc::Sender};
 
+use itertools::Itertools;
 use rand::{seq::SliceRandom, thread_rng};
+use rayon::iter::{
+    IntoParallelRefIterator, IntoParallelRefMutIterator, ParallelBridge, ParallelIterator,
+};
 
-use crate::project::{Event, EventKind, Project, Room};
+use crate::{
+    pareto::CanDominate,
+    project::{Event, EventKind, Project, Room},
+};
 
 pub type TIMEMAP = Vec<Vec<(Event, Room)>>;
 
-#[derive(Clone)]
+#[derive(Debug, Clone)]
 pub struct Solution {
     events: TIMEMAP,
     counter: Vec<Vec<usize>>,
+}
+
+impl PartialEq for Solution {
+    fn eq(&self, other: &Self) -> bool {
+        self.events.eq(&other.events)
+    }
 }
 
 impl Solution {
@@ -34,6 +47,10 @@ impl Solution {
 
     pub fn inner(&self) -> &TIMEMAP {
         &self.events
+    }
+
+    pub fn into_inner(self) -> TIMEMAP {
+        self.events
     }
 
     pub fn iter_all_shuffle(&self) -> Vec<(usize, Event, Room)> {
@@ -183,6 +200,91 @@ pub fn optimize(initial: TIMEMAP) -> TIMEMAP {
     };
 
     s.events
+}
+
+impl CanDominate for (Vec<f32>, Solution) {
+    fn sum(&self) -> f32 {
+        self.0.iter().sum()
+    }
+
+    fn compare_first_element(&self, other: &Self) -> std::cmp::Ordering {
+        self.0[0].partial_cmp(&other.0[0]).unwrap()
+    }
+
+    fn dominates(&self, other: &Self) -> bool {
+        for (a, b) in self.0.iter().zip(&other.0) {
+            if b >= a {
+                return false;
+            }
+        }
+        true
+    }
+}
+
+const NEIGHBORHOODS: [fn(Solution, &Project, &Sender<Solution>); 2] = [
+    crate::neighborhoods::relocation::neighborhoods,
+    crate::neighborhoods::greedy_room::neighborhoods,
+];
+
+pub fn optimize_solution(s: TIMEMAP, project: &'static Project) -> Vec<TIMEMAP> {
+    let mut population = vec![Solution::new(s)];
+
+    // let pool = rayon::ThreadPoolBuilder::new().build().unwrap();
+    //
+    let population_size = 20;
+    let mut temp = 1000.0;
+    for i in 0..500 {
+        println!("Begin iter {i}");
+        // let mut neighborhoods = vec![];
+
+        let (tx, rx) = std::sync::mpsc::channel();
+        let (tx2, rx2) = std::sync::mpsc::channel();
+
+        population
+            .par_iter_mut()
+            .for_each(|s| s.fill_counter(&project));
+
+        rayon::join(
+            move || {
+                population
+                    .into_iter()
+                    .cartesian_product(NEIGHBORHOODS)
+                    .par_bridge()
+                    .for_each_with(&tx, |tx, (s, f)| {
+                        f(s, &project, tx);
+                    });
+                drop(tx);
+            },
+            move || {
+                for s in rx.iter() {
+                    let tx2 = tx2.clone();
+                    rayon::spawn(move || {
+                        tx2.send((project.criteria().evaluate(&s, &project), s))
+                            .unwrap()
+                    });
+                }
+            },
+        );
+
+        let neighborhoods: Vec<(Vec<f32>, Solution)> = rx2.into_iter().collect();
+
+        dbg!(neighborhoods.len());
+
+        let frontline = crate::pareto::random_mosa(neighborhoods, population_size, temp);
+
+        let sums: Vec<f32> = frontline
+            .par_iter()
+            .map(|(c, _)| c.par_iter().sum())
+            .collect();
+
+        dbg!(sums);
+
+        population = frontline.into_iter().map(|(_, s)| s).collect();
+        temp *= 0.998;
+    }
+
+    // s.into_inner()
+    population.into_iter().map(|e| e.into_inner()).collect()
 }
 
 mod test {

@@ -1,8 +1,8 @@
-use crate::project::Project;
-
 use crate::optimize::Solution;
+use crate::project::Project;
+use std::sync::mpsc::Sender;
 
-pub fn neighborhoods(s: Solution, project: &Project, tx: crossbeam::channel::Sender<Solution>) {
+pub fn neighborhoods(s: Solution, project: &Project, tx: &Sender<Solution>) {
     for (t, e, r) in s.iter_all_shuffle() {
         let max_per_day = project.events.max_per_day(&e);
         let day_in = project.config.slots_to_day(t);
@@ -37,6 +37,8 @@ pub fn neighborhoods(s: Solution, project: &Project, tx: crossbeam::channel::Sen
 }
 
 mod test {
+    use std::sync::mpsc::channel;
+
     use super::*;
 
     #[test]
@@ -49,9 +51,10 @@ mod test {
         let mut sol = crate::optimize::Solution::new(sol);
         sol.fill_counter(&proj);
 
-        let (tx, rx) = crossbeam::channel::unbounded();
+        let (tx, rx) = channel();
 
-        neighborhoods(sol, &proj, tx);
+        neighborhoods(sol, &proj, &tx);
+        drop(tx);
 
         let solutions: Vec<Solution> = rx.iter().collect();
 

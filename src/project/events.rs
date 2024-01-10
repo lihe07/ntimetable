@@ -53,11 +53,11 @@ impl Events {
         }
     }
 
-    pub fn events_with_kind(&self, kind: EventKind) -> Vec<Event> {
-        let mut events = vec![];
+    pub fn events_with_kind(&self, kind: EventKind) -> HashSet<Event> {
+        let mut events = HashSet::new();
         for (i, k) in self.kinds.iter().enumerate() {
             if *k == kind {
-                events.push(Event(i))
+                events.insert(Event(i));
             }
         }
 

@@ -1,18 +1,27 @@
 use std::collections::HashSet;
 
 use itertools::Itertools;
+use serde::Deserialize;
 
 use crate::{
+    fatal,
     optimize::Solution,
     project::{Event, Project},
 };
 
-use super::Criterion;
+use super::{Criterion, CriterionT};
 
-#[derive(Debug)]
-struct RoomDistance {}
+fn default_weight() -> f32 {
+    1.0
+}
 
-impl Criterion for RoomDistance {
+#[derive(Debug, Deserialize)]
+pub struct RoomDistance {
+    #[serde(default = "default_weight")]
+    weight: f32,
+}
+
+impl CriterionT for RoomDistance {
     fn evaluate(&self, s: &Solution, project: &Project) -> f32 {
         let mut score = 0;
 
@@ -45,31 +54,39 @@ impl Criterion for RoomDistance {
             }
         }
 
-        score as f32
+        -score as f32 * self.weight
     }
 }
 
-pub fn parse(_config: &str) -> Box<dyn Criterion> {
+pub fn parse(config: &str) -> Criterion {
     // dbg!(config);
-    Box::new(RoomDistance {})
+    if let Ok(e) = serde_json::from_str(config) {
+        Criterion::RoomDistance(e)
+    } else {
+        fatal!("Failed to parse room_distance criterion")
+    }
 }
 
 mod test {
+    use std::sync::mpsc;
+
     use super::*;
 
     #[test]
     fn test_criterion_room_distance() {
+        // return;
         let project = Project::parse("./demo");
 
-        let c = RoomDistance {};
-        let s = crate::initial::find_initial_solution(&project, false);
+        let c = RoomDistance { weight: 1.0 };
+        let s = crate::initial::find_initial_solution(&project, true);
         let s = Solution::new(s.unwrap());
         let original_score = c.evaluate(&s, &project);
         dbg!(original_score);
 
-        let (tx, rx) = crossbeam::channel::unbounded();
+        let (tx, rx) = mpsc::channel();
 
-        crate::neighborhoods::greedy_room::neighborhoods(s, &project, tx);
+        crate::neighborhoods::greedy_room::neighborhoods(s, &project, &tx);
+        drop(tx);
 
         let v: Vec<Solution> = rx.iter().collect();
 

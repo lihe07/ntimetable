@@ -1,3 +1,10 @@
+#[cfg(not(target_env = "msvc"))]
+use tikv_jemallocator::Jemalloc;
+
+#[cfg(not(target_env = "msvc"))]
+#[global_allocator]
+static GLOBAL: Jemalloc = Jemalloc;
+
 mod criteria;
 pub mod initial;
 pub mod neighborhoods;
@@ -20,7 +27,17 @@ fn main() {
 
     let proj = project::Project::parse(args.project);
 
-    dbg!(&proj);
+    let static_ref: &'static project::Project = Box::leak(Box::new(proj));
 
-    initial::find_initial_solution(&proj, true);
+    dbg!(&static_ref);
+
+    let s = initial::find_initial_solution(&static_ref, true);
+
+    if let Some(s) = s {
+        let s = optimize::optimize_solution(s, &static_ref);
+
+        for s in s {
+            println!("{}", utils::make_table(&s, &static_ref, None));
+        }
+    }
 }

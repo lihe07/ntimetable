@@ -15,7 +15,7 @@ pub struct Project {
     pub rooms: rooms::Rooms,
     pub events: events::Events,
     pub people: people::People,
-    pub criteria: crate::criteria::Criteria,
+    pub criteria: Option<crate::criteria::Criteria>,
 }
 
 impl Debug for Project {
@@ -38,12 +38,22 @@ impl Project {
         let people = people::parse_people(&path, &events);
         events.fill_attendees(&people);
 
-        Project {
+        let mut p = Project {
             config,
             rooms,
             events,
             people,
-            criteria: crate::criteria::parse_criteria(path),
-        }
+            criteria: None,
+        };
+
+        let c = crate::criteria::parse_criteria(path, &p);
+
+        p.criteria = Some(c);
+
+        p
+    }
+
+    pub fn criteria(&self) -> &crate::criteria::Criteria {
+        self.criteria.as_ref().unwrap()
     }
 }

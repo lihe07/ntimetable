@@ -1,13 +1,13 @@
-use std::{collections::HashSet, process::exit, sync::Arc};
+use std::{collections::HashSet, sync::mpsc::Sender};
 
 use itertools::Itertools;
 
 use crate::{
     optimize::{Solution, TIMEMAP},
-    project::{Event, Project, Room},
+    project::{Event, Project},
 };
 
-pub fn neighborhoods(s: Solution, project: &Project, tx: crossbeam::channel::Sender<Solution>) {
+pub fn neighborhoods(s: Solution, project: &Project, tx: &Sender<Solution>) {
     for (person, room_kind) in project
         .people
         .iter_all()
@@ -64,20 +64,23 @@ pub fn neighborhoods(s: Solution, project: &Project, tx: crossbeam::channel::Sen
 }
 
 mod test {
+    use std::sync::mpsc::channel;
+
     use super::*;
 
     #[test]
     fn test_greedy_room() {
         let project = Project::parse("./demo");
 
-        let solution = crate::initial::find_initial_solution(&project, false).unwrap();
+        let solution = crate::initial::find_initial_solution(&project, true).unwrap();
 
         let mut solution = crate::optimize::Solution::new(solution);
         solution.fill_counter(&project);
 
-        let (tx, rx) = crossbeam::channel::unbounded();
+        let (tx, rx) = channel();
 
-        neighborhoods(solution, &project, tx);
+        neighborhoods(solution, &project, &tx);
+        drop(tx);
 
         let v: Vec<Solution> = rx.iter().collect();
 
