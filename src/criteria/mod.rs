@@ -33,6 +33,10 @@ impl Criteria {
     pub fn init(&mut self, project: &Project) {
         self.0.iter_mut().for_each(|c| c.init(&project));
     }
+
+    pub fn len(&self) -> usize {
+        self.0.len()
+    }
 }
 
 #[derive(Deserialize)]

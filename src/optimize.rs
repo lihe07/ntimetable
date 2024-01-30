@@ -1,10 +1,11 @@
 use std::{borrow::BorrowMut, collections::HashSet, io::Write, sync::mpsc::Sender};
 
 use itertools::Itertools;
-use rand::{seq::SliceRandom, thread_rng};
-use rayon::iter::{
-    IntoParallelRefIterator, IntoParallelRefMutIterator, ParallelBridge, ParallelIterator,
+use rand::{
+    seq::{IteratorRandom, SliceRandom},
+    thread_rng,
 };
+use rayon::iter::{IntoParallelRefMutIterator, ParallelBridge, ParallelIterator};
 
 use crate::{
     pareto::CanDominate,
@@ -202,7 +203,14 @@ pub fn optimize(initial: TIMEMAP) -> TIMEMAP {
     s.events
 }
 
-impl CanDominate for (Vec<f32>, Solution) {
+fn now_ms() -> u128 {
+    std::time::SystemTime::now()
+        .duration_since(std::time::UNIX_EPOCH)
+        .unwrap()
+        .as_millis()
+}
+
+impl CanDominate for (Vec<f32>, usize, Solution) {
     fn sum(&self) -> f32 {
         self.0.iter().sum()
     }
@@ -221,65 +229,191 @@ impl CanDominate for (Vec<f32>, Solution) {
     }
 }
 
-const NEIGHBORHOODS: [fn(Solution, &Project, &Sender<Solution>); 2] = [
+fn collect_neighborhoods(
+    f: &fn(Solution, &Project, &Sender<Solution>),
+    s: Solution,
+    project: &Project,
+) -> Vec<Solution> {
+    let (tx, rx) = std::sync::mpsc::channel();
+    f(s, project, &tx);
+    drop(tx);
+    rx.into_iter().collect()
+}
+
+const NEIGHBORHOODS: [fn(Solution, &Project, &Sender<Solution>); 5] = [
     crate::neighborhoods::relocation::neighborhoods,
     crate::neighborhoods::greedy_room::neighborhoods,
+    crate::neighborhoods::swap::room_only,
+    crate::neighborhoods::swap::time_only,
+    crate::neighborhoods::swap::time_and_room,
 ];
+
+fn softmax_inplace(x: &mut [f32]) {
+    let mut sum = 0.0;
+    for e in x.iter() {
+        sum += e.exp();
+    }
+    for e in x.iter_mut() {
+        *e = e.exp() / sum;
+    }
+}
 
 pub fn optimize_solution(s: TIMEMAP, project: &'static Project) -> Vec<TIMEMAP> {
     let mut population = vec![Solution::new(s)];
 
-    // let pool = rayon::ThreadPoolBuilder::new().build().unwrap();
-    //
     let population_size = 20;
     let mut temp = 1000.0;
-    for i in 0..500 {
-        println!("Begin iter {i}");
-        // let mut neighborhoods = vec![];
 
+    let avg = 1.0 / NEIGHBORHOODS.len() as f32;
+
+    let penalty_thres = 0.1;
+    let decay_constant = penalty_thres / 10.0;
+    let complementary_factor = avg * decay_constant;
+
+    let warmup = 5;
+
+    let mut factored_weights = vec![avg; NEIGHBORHOODS.len()];
+    let mut last_weights = factored_weights.clone();
+
+    let expect_graded_num = 3000;
+
+    let mut history = HashSet::new();
+    let history_max_size = 1000;
+
+    for i in 0..500 {
+        let t00 = now_ms();
         let (tx, rx) = std::sync::mpsc::channel();
-        let (tx2, rx2) = std::sync::mpsc::channel();
 
         population
             .par_iter_mut()
-            .for_each(|s| s.fill_counter(&project));
+            .for_each(|s| s.fill_counter(project));
 
-        rayon::join(
-            move || {
-                population
+        let t0 = now_ms();
+        let neighborhoods: Vec<(Vec<f32>, usize, Solution)> = population
+            .into_iter()
+            .cartesian_product(NEIGHBORHOODS.iter().enumerate())
+            .par_bridge()
+            .flat_map(move |(s, (i, f))| {
+                let n = collect_neighborhoods(f, s, project);
+                let size = n.len() as f32;
+                tx.send((i, size)).unwrap();
+            
+                n.into_iter()
+                    .choose_multiple(
+                        &mut thread_rng(),
+                        (size * factored_weights[i]).floor() as usize,
+                    )
                     .into_iter()
-                    .cartesian_product(NEIGHBORHOODS)
-                    .par_bridge()
-                    .for_each_with(&tx, |tx, (s, f)| {
-                        f(s, &project, tx);
-                    });
-                drop(tx);
-            },
-            move || {
-                for s in rx.iter() {
-                    let tx2 = tx2.clone();
-                    rayon::spawn(move || {
-                        tx2.send((project.criteria().evaluate(&s, &project), s))
-                            .unwrap()
-                    });
-                }
-            },
-        );
+                    .map(|s| (i, s))
+                    .collect::<Vec<(usize, Solution)>>()
+            })
+            .map(|(i, s)| {
+                let score = project.criteria().evaluate(&s, project);
+                (score, i, s)
+            })
+            .collect();
+        let time_grading = now_ms() - t0;
 
-        let neighborhoods: Vec<(Vec<f32>, Solution)> = rx2.into_iter().collect();
+        let mut neighborhood_sizes = vec![0.0; NEIGHBORHOODS.len()];
+        for (i, size) in rx {
+            neighborhood_sizes[i] += size;
+        }
 
-        dbg!(neighborhoods.len());
+        let graded_num = neighborhoods.len();
 
+        let t0 = now_ms();
         let frontline = crate::pareto::random_mosa(neighborhoods, population_size, temp);
+        let time_mosa = now_ms() - t0;
 
-        let sums: Vec<f32> = frontline
-            .par_iter()
-            .map(|(c, _)| c.par_iter().sum())
+        // Count scores for each neighborhoods
+        let mut max_scores = vec![f32::MIN; project.criteria().len()];
+        let mut sum_scores = vec![0.0f32; project.criteria().len()];
+
+        let mut neighborhoods_scores = vec![0.0f32; NEIGHBORHOODS.len()];
+
+        population = vec![];
+
+        for (scores, source, solution) in frontline {
+            // Fill max and sum scores
+            for (i, score) in scores.iter().enumerate() {
+                max_scores[i] = max_scores[i].max(*score);
+                sum_scores[i] += score;
+            }
+
+            if history.contains(solution.inner()) {
+                neighborhoods_scores[source] += 0.1; // Repeat, but optimal
+            } else {
+                neighborhoods_scores[source] += 2.0; // New
+                history.insert(solution.clone().into_inner());
+            }
+
+            population.push(solution);
+        }
+
+        let pop_size = population.len() as f32;
+        let avg_scores: Vec<f32> = sum_scores
+            .into_iter()
+            .map(|s| s / pop_size)
             .collect();
 
-        dbg!(sums);
+        if history.len() > history_max_size {
+            // Trim half, randomly
+            let target_size = history_max_size / 2;
+            println!(
+                "Trim history {} > {} => {}",
+                history.len(),
+                history_max_size,
+                target_size
+            );
+            let mut v = history.into_iter().collect::<Vec<_>>();
+            v.shuffle(&mut thread_rng());
+            history = v.into_iter().take(target_size).collect();
+        }
 
-        population = frontline.into_iter().map(|(_, s)| s).collect();
+        // Update weights
+        // for (i, s) in neighborhoods_scores.iter_mut().enumerate() {
+        //     *s = *s / neighborhood_sizes[i]
+        // }
+
+
+
+        let scores_per_s = neighborhoods_scores.clone();
+        softmax_inplace(&mut neighborhoods_scores);
+        // Penalty
+        for (i, s) in neighborhoods_scores.iter_mut().enumerate() {
+            if *s > avg && last_weights[i] < penalty_thres {
+                *s = (1.0 - decay_constant) * (*s) + complementary_factor;
+            }
+        }
+        last_weights = neighborhoods_scores.clone();
+        softmax_inplace(&mut neighborhoods_scores);
+
+        factored_weights = neighborhoods_scores;
+        if i > warmup {
+            // Adjust weights
+            let mut expected_num = 0.0;
+            for (i, w) in factored_weights.iter().enumerate() {
+                expected_num += neighborhood_sizes[i] * *w;
+            }
+
+            let factor = expect_graded_num as f32 / expected_num;
+            for w in factored_weights.iter_mut() {
+                *w *= factor;
+            }
+        }
+
+        println!(
+            "{i} in {}ms (NG: {time_grading}, MOSA: {time_mosa}). Avg: {:?}. Max: {:?}.\nS: {:?}. W: {:?} T: {}. G: {}. P: {}",
+            now_ms() - t00,
+            avg_scores,
+            max_scores,
+            scores_per_s, 
+            last_weights,
+            temp,
+            graded_num,
+            pop_size
+        );
+
         temp *= 0.998;
     }
 
@@ -298,7 +432,12 @@ mod test {
 
         let test_kind = EventKind(1);
 
-        let test_event = proj.events.events_with_kind(test_kind)[0];
+        let test_event = proj
+            .events
+            .events_with_kind(test_kind)
+            .into_iter()
+            .next()
+            .unwrap();
 
         dummy_events.push(vec![(test_event, Room(0))]);
         dummy_events.push(vec![]);

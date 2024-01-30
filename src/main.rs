@@ -31,13 +31,13 @@ fn main() {
 
     dbg!(&static_ref);
 
-    let s = initial::find_initial_solution(&static_ref, true);
+    let s = initial::find_initial_solution(static_ref, true);
 
     if let Some(s) = s {
-        let s = optimize::optimize_solution(s, &static_ref);
+        let s = optimize::optimize_solution(s, static_ref);
 
         for s in s {
-            println!("{}", utils::make_table(&s, &static_ref, None));
+            println!("{}", utils::make_table(&s, static_ref, None));
         }
     }
 }

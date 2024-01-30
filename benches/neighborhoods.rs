@@ -1,16 +1,16 @@
 use criterion::{black_box, criterion_group, criterion_main, Criterion};
-use crossbeam::channel::unbounded;
 use ntimetable::{
     neighborhoods::{greedy_room, relocation, swap},
     project::Project,
 };
+use std::sync::mpsc::channel;
 
 macro_rules! bench_function {
     ($c:expr, $s:expr, $project:expr, $n:tt, $f:expr) => {
         $c.bench_function($n, |b| {
             b.iter(|| {
-                let (tx, _rx) = unbounded();
-                $f($s.clone(), &$project, tx);
+                let (tx, _rx) = channel();
+                $f($s.clone(), &$project, &tx);
             });
         });
     };
