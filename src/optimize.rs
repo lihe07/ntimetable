@@ -258,8 +258,20 @@ fn softmax_inplace(x: &mut [f32]) {
     }
 }
 
+fn avg_inplace(x: &mut [f32]) {
+    let mut sum = 0.0;
+    for e in x.iter() {
+        sum += e;
+    }
+    for e in x.iter_mut() {
+        *e = *e / sum;
+    }
+}
+
 pub fn optimize_solution(s: TIMEMAP, project: &'static Project) -> Vec<TIMEMAP> {
     let mut population = vec![Solution::new(s)];
+
+
 
     let population_size = 20;
     let mut temp = 1000.0;
@@ -270,10 +282,13 @@ pub fn optimize_solution(s: TIMEMAP, project: &'static Project) -> Vec<TIMEMAP> 
     let decay_constant = penalty_thres / 10.0;
     let complementary_factor = avg * decay_constant;
 
-    let warmup = 5;
+    let warmup = 0;
 
     let mut factored_weights = vec![avg; NEIGHBORHOODS.len()];
     let mut last_weights = factored_weights.clone();
+
+
+    let mut history_weights = std::fs::File::create("./history_weights.txt").unwrap();
 
     let expect_graded_num = 3000;
 
@@ -329,7 +344,7 @@ pub fn optimize_solution(s: TIMEMAP, project: &'static Project) -> Vec<TIMEMAP> 
         let mut max_scores = vec![f32::MIN; project.criteria().len()];
         let mut sum_scores = vec![0.0f32; project.criteria().len()];
 
-        let mut neighborhoods_scores = vec![0.0f32; NEIGHBORHOODS.len()];
+        let mut neighborhoods_scores = vec![1.0f32; NEIGHBORHOODS.len()];
 
         population = vec![];
 
@@ -341,7 +356,7 @@ pub fn optimize_solution(s: TIMEMAP, project: &'static Project) -> Vec<TIMEMAP> 
             }
 
             if history.contains(solution.inner()) {
-                neighborhoods_scores[source] += 0.1; // Repeat, but optimal
+                // neighborhoods_scores[source] += 0.1; // Repeat, but optimal
             } else {
                 neighborhoods_scores[source] += 2.0; // New
                 history.insert(solution.clone().into_inner());
@@ -370,15 +385,16 @@ pub fn optimize_solution(s: TIMEMAP, project: &'static Project) -> Vec<TIMEMAP> 
             history = v.into_iter().take(target_size).collect();
         }
 
+
+        dbg!(&neighborhood_sizes, &neighborhoods_scores);
+
         // Update weights
-        // for (i, s) in neighborhoods_scores.iter_mut().enumerate() {
-        //     *s = *s / neighborhood_sizes[i]
-        // }
+        for (i, s) in neighborhoods_scores.iter_mut().enumerate() {
+            *s = *s / neighborhood_sizes[i]
+        }
 
-
-
+        avg_inplace(&mut neighborhoods_scores);
         let scores_per_s = neighborhoods_scores.clone();
-        softmax_inplace(&mut neighborhoods_scores);
         // Penalty
         for (i, s) in neighborhoods_scores.iter_mut().enumerate() {
             if *s > avg && last_weights[i] < penalty_thres {
@@ -386,7 +402,7 @@ pub fn optimize_solution(s: TIMEMAP, project: &'static Project) -> Vec<TIMEMAP> 
             }
         }
         last_weights = neighborhoods_scores.clone();
-        softmax_inplace(&mut neighborhoods_scores);
+        avg_inplace(&mut neighborhoods_scores);
 
         factored_weights = neighborhoods_scores;
         if i > warmup {
@@ -401,6 +417,9 @@ pub fn optimize_solution(s: TIMEMAP, project: &'static Project) -> Vec<TIMEMAP> 
                 *w *= factor;
             }
         }
+
+        // history_weights.push(last_weights.clone());
+        writeln!(history_weights, "{:?}", last_weights);
 
         println!(
             "{i} in {}ms (NG: {time_grading}, MOSA: {time_mosa}). Avg: {:?}. Max: {:?}.\nS: {:?}. W: {:?} T: {}. G: {}. P: {}",
