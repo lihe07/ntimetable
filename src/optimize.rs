@@ -1,4 +1,4 @@
-use std::{borrow::BorrowMut, collections::HashSet, io::Write, sync::mpsc::Sender};
+use std::{borrow::BorrowMut, collections::HashSet, sync::mpsc::Sender};
 
 use itertools::Itertools;
 use rand::{
@@ -10,7 +10,9 @@ use rayon::iter::{IntoParallelRefMutIterator, ParallelBridge, ParallelIterator};
 use crate::{
     pareto::CanDominate,
     project::{Event, EventKind, Project, Room},
+    log::now_ms
 };
+
 
 pub type TIMEMAP = Vec<Vec<(Event, Room)>>;
 
@@ -203,13 +205,6 @@ pub fn optimize(initial: TIMEMAP) -> TIMEMAP {
     s.events
 }
 
-fn now_ms() -> u128 {
-    std::time::SystemTime::now()
-        .duration_since(std::time::UNIX_EPOCH)
-        .unwrap()
-        .as_millis()
-}
-
 impl CanDominate for (Vec<f32>, usize, Solution) {
     fn sum(&self) -> f32 {
         self.0.iter().sum()
@@ -268,18 +263,18 @@ fn avg_inplace(x: &mut [f32]) {
     }
 }
 
+
+
 pub fn optimize_solution(s: TIMEMAP, project: &'static Project) -> Vec<TIMEMAP> {
     let mut population = vec![Solution::new(s)];
-
-
 
     let population_size = 20;
     let mut temp = 1000.0;
 
     let avg = 1.0 / NEIGHBORHOODS.len() as f32;
 
-    let penalty_thres = 0.1;
-    let decay_constant = penalty_thres / 10.0;
+    let penalty_thres = project.config.penalty_threshold;
+    let decay_constant = penalty_thres / project.config.penalty_factor;
     let complementary_factor = avg * decay_constant;
 
     let warmup = 0;
@@ -287,15 +282,21 @@ pub fn optimize_solution(s: TIMEMAP, project: &'static Project) -> Vec<TIMEMAP> 
     let mut factored_weights = vec![avg; NEIGHBORHOODS.len()];
     let mut last_weights = factored_weights.clone();
 
-
-    let mut history_weights = std::fs::File::create("./history_weights.txt").unwrap();
-
-    let expect_graded_num = 3000;
+    let expect_graded_num = project.config.expected_graded_num;
 
     let mut history = HashSet::new();
-    let history_max_size = 1000;
+    let history_max_size = project.config.history_size;
+
+    let (ctrlc_send, ctrlc_recv) = std::sync::mpsc::channel();
+    ctrlc::set_handler(move || {
+        ctrlc_send.send(()).unwrap();
+    }).expect("Error setting Ctrl-C handler");
 
     for i in 0..500 {
+        if ctrlc_recv.try_recv().is_ok() {
+            break;
+        }
+
         let t00 = now_ms();
         let (tx, rx) = std::sync::mpsc::channel();
 
@@ -365,11 +366,13 @@ pub fn optimize_solution(s: TIMEMAP, project: &'static Project) -> Vec<TIMEMAP> 
             population.push(solution);
         }
 
+
         let pop_size = population.len() as f32;
         let avg_scores: Vec<f32> = sum_scores
             .into_iter()
             .map(|s| s / pop_size)
             .collect();
+
 
         if history.len() > history_max_size {
             // Trim half, randomly
@@ -388,23 +391,23 @@ pub fn optimize_solution(s: TIMEMAP, project: &'static Project) -> Vec<TIMEMAP> 
 
         dbg!(&neighborhood_sizes, &neighborhoods_scores);
 
-        // Update weights
-        for (i, s) in neighborhoods_scores.iter_mut().enumerate() {
-            *s = *s / neighborhood_sizes[i]
-        }
+        let mut average_scores = neighborhoods_scores.iter().enumerate().map(|(i, s)| s / neighborhood_sizes[i]).collect::<Vec<_>>();
+        avg_inplace(&mut average_scores);
 
-        avg_inplace(&mut neighborhoods_scores);
-        let scores_per_s = neighborhoods_scores.clone();
         // Penalty
-        for (i, s) in neighborhoods_scores.iter_mut().enumerate() {
+        
+        let mut factored_scores = average_scores.iter().enumerate().map(|(i, s)| {
             if *s > avg && last_weights[i] < penalty_thres {
-                *s = (1.0 - decay_constant) * (*s) + complementary_factor;
+                (1.0 - decay_constant) * (*s) + complementary_factor
+            } else {
+                *s
             }
-        }
-        last_weights = neighborhoods_scores.clone();
-        avg_inplace(&mut neighborhoods_scores);
+        }).collect::<Vec<_>>();
 
-        factored_weights = neighborhoods_scores;
+        last_weights = factored_scores.clone();
+        avg_inplace(&mut factored_scores);
+
+        factored_weights = factored_scores;
         if i > warmup {
             // Adjust weights
             let mut expected_num = 0.0;
@@ -418,15 +421,26 @@ pub fn optimize_solution(s: TIMEMAP, project: &'static Project) -> Vec<TIMEMAP> 
             }
         }
 
-        // history_weights.push(last_weights.clone());
-        writeln!(history_weights, "{:?}", last_weights);
+
+        crate::log::step(crate::log::Step{
+            i,
+            weights: last_weights.clone(),
+            average_scores: avg_scores.clone(),
+            max_scores: max_scores.clone(),
+            neighborhood_grading_time: time_grading,
+            mosa_time: time_mosa,
+graded: graded_num,
+            temperature: temp,
+            history_size: history.len(),
+neighborhood_average: average_scores.clone(),
+        });
 
         println!(
             "{i} in {}ms (NG: {time_grading}, MOSA: {time_mosa}). Avg: {:?}. Max: {:?}.\nS: {:?}. W: {:?} T: {}. G: {}. P: {}",
             now_ms() - t00,
             avg_scores,
             max_scores,
-            scores_per_s, 
+            average_scores, 
             last_weights,
             temp,
             graded_num,

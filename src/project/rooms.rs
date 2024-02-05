@@ -8,7 +8,7 @@ use std::{
 
 use crate::{fatal, must_open, utils};
 
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Hash, serde::Serialize)]
 pub struct Room(pub usize);
 
 #[derive(Debug, Clone, Copy, PartialEq, Hash, Eq)]

@@ -1,3 +1,4 @@
+mod event_time_distance;
 mod events_distance;
 mod room_distance;
 
@@ -14,6 +15,7 @@ enum Criterion {
     RoomDistance(room_distance::RoomDistance),
     EventsDistance(events_distance::EventsDistance),
     EventsDistanceSameType(events_distance::EventsDistanceSameType),
+    EventTimeDistance(event_time_distance::EventTimeDistance),
 }
 
 #[enum_dispatch(Criterion)]
@@ -58,6 +60,7 @@ pub fn parse_criteria<P: AsRef<Path>>(path: P, project: &Project) -> Criteria {
             // "event_time_distance" =>
             "room_distance" => room_distance::parse,
             "events_distance" => events_distance::parse,
+            "event_time_distance" => event_time_distance::parse,
             _ => {
                 warn!("Invalid criterion type: {k}");
                 continue;
@@ -68,7 +71,7 @@ pub fn parse_criteria<P: AsRef<Path>>(path: P, project: &Project) -> Criteria {
     }
 
     let mut c = Criteria(boxed_criteria);
-    c.init(&project);
+    c.init(project);
 
     c
 }

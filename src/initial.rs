@@ -7,6 +7,7 @@ use rand::{seq::SliceRandom, thread_rng};
 
 use crate::{
     fatal,
+    log::now_ms,
     optimize::TIMEMAP,
     project::{Event, Project},
 };
@@ -224,7 +225,9 @@ pub fn find_initial_solution(project: &Project, verbose: bool) -> Option<TIMEMAP
     };
 
     for i in 0..project.config.initial_attempts {
-        if let Some(s) = f(&project, verbose) {
+        let t0 = now_ms();
+        if let Some(s) = f(project, verbose) {
+            crate::log::initial(project, now_ms() - t0, s.clone());
             return Some(s);
         } else if verbose {
             println!(

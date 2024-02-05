@@ -1,10 +1,18 @@
 import seaborn as sns
 import matplotlib.pyplot as plt
-import numpy as np
 import pandas as pd
 from scipy.ndimage import gaussian_filter1d
+import json
+import sys
+import os
 
-sns.set_style("darkgrid")
+proj = sys.argv[1]
+
+log = os.path.join(proj, "log.json")
+
+# sns.set_style("darkgrid")
+sns.set_palette("husl")
+sns.set_style("whitegrid")
 
 names = [
     "relocation",
@@ -14,18 +22,24 @@ names = [
     "time_room",
 ]
 
-with open("./history_weights.txt") as f:
-    history = f.readlines()  # [...] \n [...] \n [...] \n
+# with open("./history_weights.txt") as f:
+#     history = f.readlines()  # [...] \n [...] \n [...] \n
+#
+#
+# history = [eval(x) for x in history]  # convert string to list
+# history = np.array(history)  # convert list to numpy array
+log = json.load(open(log, "r"))
 
+history = []
+for step in log["steps"]:
+    history.append(step["weights"])
 
-history = [eval(x) for x in history]  # convert string to list
-history = np.array(history)  # convert list to numpy array
 data = pd.DataFrame(history, columns=names)  # convert numpy array to dataframe
 
 
 # Draw line plot
 
-plt.figure(figsize=(10, 6))
+plt.figure(figsize=(12, 6))
 
 # with smooth (gaussian filter)
 for name in names:
@@ -35,6 +49,8 @@ for name in names:
     )
 
 
+plt.xlabel("Iteration")
+plt.xlim(0, len(history))
 plt.legend()
 
 plt.tight_layout()

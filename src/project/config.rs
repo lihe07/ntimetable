@@ -12,7 +12,7 @@ fn default_initial_attempts() -> usize {
     3
 }
 
-#[derive(Debug, Deserialize)]
+#[derive(Default, Debug, Deserialize)]
 pub struct Config {
     pub slots_per_day: usize,
     days: usize,
@@ -29,6 +29,17 @@ pub struct Config {
 
     pub max_iter_initial: usize,
     pub max_iter: usize,
+
+    pub population_size: usize,
+    pub initial_temperature: f32,
+
+    /// If change is smaller than it, penalty will be applied
+    pub penalty_threshold: f32,
+    /// How many steps to decrease to avg
+    pub penalty_factor: f32,
+
+    pub expected_graded_num: usize,
+    pub history_size: usize,
 }
 
 impl Config {
@@ -80,12 +91,7 @@ mod test {
         let c = Config {
             slots_per_day: 10,
             days: 5,
-            max_iter_initial: 0,
-            max_iter: 0,
-            num_slots: 0,
-            tabu_size: 0,
-            initial_attempts: 0,
-            initial_method: String::new(),
+            ..Default::default()
         };
         assert!(c.slots_of_day(1).contains(&10));
         assert!(c.slots_of_day(1).contains(&19));

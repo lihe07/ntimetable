@@ -1,0 +1,442 @@
+[
+    {
+        "name": "AntCul",
+        "num_per_week": 2,
+        "room_kind": "normal"
+    },
+    {
+        "name": "ArcClaCS",
+        "num_per_week": 2,
+        "room_kind": "normal"
+    },
+    {
+        "name": "ArcCla1",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "ArcCla2",
+        "num_per_week": 2,
+        "room_kind": "normal"
+    },
+    {
+        "name": "ArcCriMed",
+        "num_per_week": 2,
+        "room_kind": "normal"
+    },
+    {
+        "name": "ArcVicOriAnt",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "ArcStoArtMus",
+        "num_per_week": 2,
+        "room_kind": "normal"
+    },
+    {
+        "name": "ArcMedCS",
+        "num_per_week": 2,
+        "room_kind": "normal"
+    },
+    {
+        "name": "Archiv",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "ArchivCS",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "BioarcCS",
+        "num_per_week": 2,
+        "room_kind": "normal"
+    },
+    {
+        "name": "Cartog",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "ChiResCS",
+        "num_per_week": 2,
+        "room_kind": "normal"
+    },
+    {
+        "name": "Codico",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "CodicoCS",
+        "num_per_week": 2,
+        "room_kind": "normal"
+    },
+    {
+        "name": "EcoAzi",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "EleInfSciCatBenCulM2",
+        "num_per_week": 2,
+        "room_kind": "normal"
+    },
+    {
+        "name": "EleInfSciCatBenCulM3",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "EpiLat",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "Esteti",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "EtrAntIta",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "FilCla2",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "FilTeo",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "FonSoc",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "GeoTur",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "Geo1",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "Glotto",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "InfDoc",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "ItaScr",
+        "num_per_week": 2,
+        "room_kind": "normal"
+    },
+    {
+        "name": "LabScr",
+        "num_per_week": 1,
+        "room_kind": "normal"
+    },
+    {
+        "name": "LegBenCul2",
+        "num_per_week": 2,
+        "room_kind": "normal"
+    },
+    {
+        "name": "LetCriAnt",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "LinLetGre1",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "LinLetLatCS",
+        "num_per_week": 2,
+        "room_kind": "normal"
+    },
+    {
+        "name": "LinLetLat2",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "LinGreA",
+        "num_per_week": 2,
+        "room_kind": "normal"
+    },
+    {
+        "name": "LinLatA",
+        "num_per_week": 2,
+        "room_kind": "normal"
+    },
+    {
+        "name": "LinLatB",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "LinGen",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "LinIta",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "LogFilMat",
+        "num_per_week": 2,
+        "room_kind": "normal"
+    },
+    {
+        "name": "MatTecAppArcM3",
+        "num_per_week": 2,
+        "room_kind": "normal"
+    },
+    {
+        "name": "MatCarCosResEdiSto",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "MetRicStoArt",
+        "num_per_week": 2,
+        "room_kind": "normal"
+    },
+    {
+        "name": "NumismCS",
+        "num_per_week": 2,
+        "room_kind": "normal"
+    },
+    {
+        "name": "OrientCS",
+        "num_per_week": 2,
+        "room_kind": "normal"
+    },
+    {
+        "name": "Paleoa",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "PalLat",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "PapiroCS",
+        "num_per_week": 2,
+        "room_kind": "normal"
+    },
+    {
+        "name": "ProMedCS",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "PsiTur",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "SocArt",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "Sociol1",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "StoConCS",
+        "num_per_week": 2,
+        "room_kind": "normal"
+    },
+    {
+        "name": "StoAntStaItaCS",
+        "num_per_week": 2,
+        "room_kind": "normal"
+    },
+    {
+        "name": "StoColIstMus",
+        "num_per_week": 2,
+        "room_kind": "normal"
+    },
+    {
+        "name": "StoDisGra",
+        "num_per_week": 2,
+        "room_kind": "normal"
+    },
+    {
+        "name": "StoFriCS",
+        "num_per_week": 2,
+        "room_kind": "normal"
+    },
+    {
+        "name": "StoLibSta",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "StoLibStaCSM1",
+        "num_per_week": 2,
+        "room_kind": "normal"
+    },
+    {
+        "name": "StoLibStaCSM2",
+        "num_per_week": 2,
+        "room_kind": "normal"
+    },
+    {
+        "name": "StoRes",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "StoArc",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "StoArcCon",
+        "num_per_week": 2,
+        "room_kind": "normal"
+    },
+    {
+        "name": "StoArcMed",
+        "num_per_week": 2,
+        "room_kind": "normal"
+    },
+    {
+        "name": "StoArt",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "StoCriArt",
+        "num_per_week": 2,
+        "room_kind": "normal"
+    },
+    {
+        "name": "StoFilCS",
+        "num_per_week": 2,
+        "room_kind": "normal"
+    },
+    {
+        "name": "StoFilMedCS",
+        "num_per_week": 2,
+        "room_kind": "normal"
+    },
+    {
+        "name": "StoLinItaCS",
+        "num_per_week": 2,
+        "room_kind": "normal"
+    },
+    {
+        "name": "StoMus",
+        "num_per_week": 2,
+        "room_kind": "normal"
+    },
+    {
+        "name": "StoProArtCulMatMed",
+        "num_per_week": 2,
+        "room_kind": "normal"
+    },
+    {
+        "name": "StoArtCon2CS",
+        "num_per_week": 2,
+        "room_kind": "normal"
+    },
+    {
+        "name": "StoArtMod2CS",
+        "num_per_week": 2,
+        "room_kind": "normal"
+    },
+    {
+        "name": "StoBib",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "StoTecArtM12",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "StoTecArtM3",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "StoTecArtCS",
+        "num_per_week": 2,
+        "room_kind": "normal"
+    },
+    {
+        "name": "StoCriCin",
+        "num_per_week": 2,
+        "room_kind": "normal"
+    },
+    {
+        "name": "StoTecFot",
+        "num_per_week": 2,
+        "room_kind": "normal"
+    },
+    {
+        "name": "StoGre",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "StoMed2",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "StoModCS",
+        "num_per_week": 2,
+        "room_kind": "normal"
+    },
+    {
+        "name": "StoMod2",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "StoRom",
+        "num_per_week": 2,
+        "room_kind": "normal"
+    },
+    {
+        "name": "StoRomCS",
+        "num_per_week": 2,
+        "room_kind": "normal"
+    },
+    {
+        "name": "TedUma",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "TopRilMonAnt",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    }
+]

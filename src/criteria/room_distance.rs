@@ -40,7 +40,7 @@ impl CriterionT for RoomDistance {
 
             for day in project.config.days() {
                 let mut last_room = None;
-                for (_, e, r) in s.events_of_day(day, &project) {
+                for (_, e, r) in s.events_of_day(day, project) {
                     if attended.contains(&e) {
                         // rooms.push((t, e, r));
                         // rooms_set.insert(r);

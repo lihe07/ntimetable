@@ -26,7 +26,7 @@ struct RawEvent {
     room_kind: String,
 }
 
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Hash, serde::Serialize)]
 pub struct Event(pub usize);
 
 #[derive(Debug, Clone, Copy, PartialEq, Hash, Eq)]
