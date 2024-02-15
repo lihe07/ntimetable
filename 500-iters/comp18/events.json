@@ -1,0 +1,237 @@
+[
+    {
+        "name": "LET-STO-StoMed2",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "LET-STO-StoMed1",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "LET-ITA-LinIta",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "LET-ITA-LetIta2",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "LET-ITA-EleLinGenFil",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "LET-GEO-StoCriCin",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "LET-GEO-Geo2",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "LET-GEO-Geo1",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "LET-FIL-StoSci",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "LET-FIL-Est",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "LET-CST-StoRom",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "LET-CST-StoGre",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "LET-CST-EpiLat",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "LET-CLE-LinLetGre2",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "LET-CLE-LinLat",
+        "num_per_week": 2,
+        "room_kind": "normal"
+    },
+    {
+        "name": "LET-CLE-LinGre",
+        "num_per_week": 2,
+        "room_kind": "normal"
+    },
+    {
+        "name": "LET-CLE-Glo",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "LET-CLE-FilCla",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "CBC-LIB-StoLibSta",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "CBC-LIB-StoBib",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "CBC-LIB-PalLat",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "CBC-LIB-InfDoc",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "CBC-LIB-Cod",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "CBC-LIB-ArcSpe",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "CBC-LIB-Arc",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "CBC-ART-StoTecFot",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "CBC-ART-StoTecArt",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "CBC-ART-StoRes",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "CBC-ART-StoProArtCulMatMed",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "CBC-ART-StoMus",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "CBC-ART-StoDisGra",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "CBC-ART-StoCriCin",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "CBC-ART-StoCriArt",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "CBC-ART-StoArcMed",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "CBC-ART-StoArcCon",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "CBC-ART-SocArt",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "CBC-ART-MatCarCosResEdiSto",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "CBC-ART-EleInfSciCatBenCul",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "CBC-ART-ArcStoArtMusA",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "CBC-ARC-TopRilMonAnt",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "CBC-ARC-Palantro",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "CBC-ARC-MatTecAppArc",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "CBC-ARC-LinLat",
+        "num_per_week": 2,
+        "room_kind": "normal"
+    },
+    {
+        "name": "CBC-ARC-Geo1",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "CBC-ARC-EtrAntIta",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "CBC-ARC-ArcCriMed",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "CBC-ARC-ArcCla2",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    }
+]

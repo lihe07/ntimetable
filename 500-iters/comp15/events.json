@@ -1,0 +1,362 @@
+[
+    {
+        "name": "ChiGenAn",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "GeoAn",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "CamEleAn",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "FonChiAn",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "IngConAn",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "StrIndAn",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "TecCosAn",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "Mat1Cn",
+        "num_per_week": 5,
+        "room_kind": "normal"
+    },
+    {
+        "name": "MecRazCn",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "DisCn",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "TecMatCn",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "ArcTecCn",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "DisEdiCn",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "Idr2Cn",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "Mat1En",
+        "num_per_week": 5,
+        "room_kind": "normal"
+    },
+    {
+        "name": "ChiStaEn",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "ConAutEn",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "RetLogEn",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "TeoRetEn",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "ComEleEn",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "EleSis1En",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "MetMatEn",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "RetCal1G1n",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "Mat1G2n",
+        "num_per_week": 5,
+        "room_kind": "normal"
+    },
+    {
+        "name": "ChiG2n",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "DisComEsG2n",
+        "num_per_week": 1,
+        "room_kind": "normal"
+    },
+    {
+        "name": "FonMecG2n",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "TerAppG2n",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "CalProG2n",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "Mat1Mn",
+        "num_per_week": 5,
+        "room_kind": "normal"
+    },
+    {
+        "name": "DisIndMn",
+        "num_per_week": 2,
+        "room_kind": "normal"
+    },
+    {
+        "name": "DisIndEsMn",
+        "num_per_week": 1,
+        "room_kind": "normal"
+    },
+    {
+        "name": "FluMn",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "ComMecMn",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "CosMacMn",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "TecMec1Mn",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "Mat1Ar",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "FonInfAr",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "LabEle1Ar",
+        "num_per_week": 7,
+        "room_kind": "normal"
+    },
+    {
+        "name": "LabEle2Ar",
+        "num_per_week": 7,
+        "room_kind": "normal"
+    },
+    {
+        "name": "LabEle3Ar",
+        "num_per_week": 7,
+        "room_kind": "normal"
+    },
+    {
+        "name": "GeoAppAns",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "IdrNumAns",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "MecSuoAns",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "PriIngAns",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "StaPenAns",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "StaAns",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "ArcTecCns",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "EleTel1Ens",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "SisTel1Ens",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "AppIndGns",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "RetCal2Gns",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "TecCos1Cv",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "StoArcCv",
+        "num_per_week": 5,
+        "room_kind": "normal"
+    },
+    {
+        "name": "TeoStr1Cv",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "MecCom1Cv",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "ArcComCv",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "CalAut1Cv",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "CosZonCv",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "ImpTec1Cv",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "IdrAppCv",
+        "num_per_week": 5,
+        "room_kind": "normal"
+    },
+    {
+        "name": "RivSpeCv",
+        "num_per_week": 5,
+        "room_kind": "normal"
+    },
+    {
+        "name": "CalEle1Ev",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "CamEle1Ev",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "EleIndEv",
+        "num_per_week": 5,
+        "room_kind": "normal"
+    },
+    {
+        "name": "GesAziGv",
+        "num_per_week": 5,
+        "room_kind": "normal"
+    },
+    {
+        "name": "ChiInd1Gv",
+        "num_per_week": 5,
+        "room_kind": "normal"
+    },
+    {
+        "name": "OrgPro1Gv",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "Mac1Mv",
+        "num_per_week": 5,
+        "room_kind": "normal"
+    },
+    {
+        "name": "TerAppMv",
+        "num_per_week": 5,
+        "room_kind": "normal"
+    },
+    {
+        "name": "DisAssMv",
+        "num_per_week": 5,
+        "room_kind": "normal"
+    },
+    {
+        "name": "MecVibMn",
+        "num_per_week": 5,
+        "room_kind": "normal"
+    }
+]

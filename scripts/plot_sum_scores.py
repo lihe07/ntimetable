@@ -11,7 +11,6 @@ proj = sys.argv[1]
 
 log = os.path.join(proj, "log.json")
 
-sns.set_palette("husl")
 sns.set_style("whitegrid")
 
 log = json.load(open(log, "r"))
@@ -47,8 +46,8 @@ def process(x):
 
 # create sum_average column
 data["sum_average"] = data["average_scores"].apply(process)
-
 data["sum_max"] = data["max_scores"].apply(process)
+
 
 # plot against iteration
 plt.figure(figsize=(9, 6))

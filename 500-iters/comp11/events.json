@@ -1,0 +1,152 @@
+[
+    {
+        "name": "c0006",
+        "num_per_week": 2,
+        "room_kind": "normal"
+    },
+    {
+        "name": "c0007",
+        "num_per_week": 2,
+        "room_kind": "normal"
+    },
+    {
+        "name": "c0008",
+        "num_per_week": 9,
+        "room_kind": "normal"
+    },
+    {
+        "name": "c0009",
+        "num_per_week": 7,
+        "room_kind": "normal"
+    },
+    {
+        "name": "c0017",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "c0018",
+        "num_per_week": 9,
+        "room_kind": "normal"
+    },
+    {
+        "name": "c0019",
+        "num_per_week": 8,
+        "room_kind": "normal"
+    },
+    {
+        "name": "c0079",
+        "num_per_week": 6,
+        "room_kind": "normal"
+    },
+    {
+        "name": "c0081",
+        "num_per_week": 6,
+        "room_kind": "normal"
+    },
+    {
+        "name": "c0082",
+        "num_per_week": 5,
+        "room_kind": "normal"
+    },
+    {
+        "name": "c0083",
+        "num_per_week": 5,
+        "room_kind": "normal"
+    },
+    {
+        "name": "c0085",
+        "num_per_week": 5,
+        "room_kind": "normal"
+    },
+    {
+        "name": "c0026",
+        "num_per_week": 6,
+        "room_kind": "normal"
+    },
+    {
+        "name": "c0027",
+        "num_per_week": 6,
+        "room_kind": "normal"
+    },
+    {
+        "name": "c0028",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "c0034",
+        "num_per_week": 6,
+        "room_kind": "normal"
+    },
+    {
+        "name": "c0036",
+        "num_per_week": 6,
+        "room_kind": "normal"
+    },
+    {
+        "name": "c0038",
+        "num_per_week": 6,
+        "room_kind": "normal"
+    },
+    {
+        "name": "c0040",
+        "num_per_week": 5,
+        "room_kind": "normal"
+    },
+    {
+        "name": "c0042",
+        "num_per_week": 5,
+        "room_kind": "normal"
+    },
+    {
+        "name": "c0044",
+        "num_per_week": 5,
+        "room_kind": "normal"
+    },
+    {
+        "name": "c0045",
+        "num_per_week": 6,
+        "room_kind": "normal"
+    },
+    {
+        "name": "c0107",
+        "num_per_week": 6,
+        "room_kind": "normal"
+    },
+    {
+        "name": "c0108",
+        "num_per_week": 9,
+        "room_kind": "normal"
+    },
+    {
+        "name": "c0109",
+        "num_per_week": 4,
+        "room_kind": "normal"
+    },
+    {
+        "name": "c0110",
+        "num_per_week": 7,
+        "room_kind": "normal"
+    },
+    {
+        "name": "c0111",
+        "num_per_week": 2,
+        "room_kind": "normal"
+    },
+    {
+        "name": "c0113",
+        "num_per_week": 3,
+        "room_kind": "normal"
+    },
+    {
+        "name": "c0115",
+        "num_per_week": 6,
+        "room_kind": "normal"
+    },
+    {
+        "name": "c0116",
+        "num_per_week": 4,
+        "room_kind": "normal"
+    }
+]

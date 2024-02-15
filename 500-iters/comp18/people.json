@@ -1,0 +1,707 @@
+[
+    {
+        "name": "q000",
+        "attend": [
+            "LET-ITA-EleLinGenFil",
+            "LET-CLE-LinLat",
+            "LET-STO-StoMed1",
+            "LET-GEO-Geo1"
+        ]
+    },
+    {
+        "name": "q001",
+        "attend": [
+            "LET-ITA-LinIta",
+            "LET-ITA-LetIta2",
+            "CBC-LIB-Arc"
+        ]
+    },
+    {
+        "name": "q002",
+        "attend": [
+            "LET-ITA-LinIta",
+            "LET-ITA-LetIta2",
+            "CBC-LIB-Cod"
+        ]
+    },
+    {
+        "name": "q003",
+        "attend": [
+            "LET-ITA-LinIta",
+            "LET-ITA-LetIta2",
+            "CBC-LIB-PalLat"
+        ]
+    },
+    {
+        "name": "q004",
+        "attend": [
+            "LET-ITA-LinIta",
+            "LET-ITA-LetIta2",
+            "CBC-LIB-StoLibSta"
+        ]
+    },
+    {
+        "name": "q005",
+        "attend": [
+            "CBC-ART-StoMus",
+            "LET-FIL-Est"
+        ]
+    },
+    {
+        "name": "q006",
+        "attend": [
+            "LET-ITA-EleLinGenFil",
+            "LET-GEO-Geo1",
+            "LET-CLE-LinGre",
+            "LET-CLE-LinLat"
+        ]
+    },
+    {
+        "name": "q007",
+        "attend": [
+            "LET-CLE-Glo",
+            "LET-ITA-LetIta2",
+            "LET-CST-StoGre"
+        ]
+    },
+    {
+        "name": "q008",
+        "attend": [
+            "LET-CLE-FilCla",
+            "LET-CLE-LinLetGre2",
+            "LET-CST-StoRom"
+        ]
+    },
+    {
+        "name": "q010",
+        "attend": [
+            "LET-ITA-LetIta2",
+            "LET-CST-StoGre",
+            "LET-CST-StoRom"
+        ]
+    },
+    {
+        "name": "q011",
+        "attend": [
+            "LET-CST-EpiLat",
+            "LET-CLE-FilCla",
+            "CBC-ARC-TopRilMonAnt"
+        ]
+    },
+    {
+        "name": "q012",
+        "attend": [
+            "LET-CST-EpiLat",
+            "LET-CLE-Glo",
+            "CBC-ARC-TopRilMonAnt"
+        ]
+    },
+    {
+        "name": "q014",
+        "attend": [
+            "LET-GEO-Geo2",
+            "LET-ITA-LetIta2"
+        ]
+    },
+    {
+        "name": "q015",
+        "attend": [
+            "LET-GEO-Geo2",
+            "LET-ITA-LinIta",
+            "LET-FIL-StoSci",
+            "CBC-ART-StoMus"
+        ]
+    },
+    {
+        "name": "q016",
+        "attend": [
+            "LET-GEO-Geo2",
+            "LET-ITA-LinIta",
+            "LET-FIL-StoSci",
+            "LET-GEO-StoCriCin"
+        ]
+    },
+    {
+        "name": "q018",
+        "attend": [
+            "CBC-LIB-Arc",
+            "LET-ITA-LetIta2",
+            "CBC-LIB-PalLat"
+        ]
+    },
+    {
+        "name": "q019",
+        "attend": [
+            "LET-FIL-StoSci",
+            "LET-STO-StoMed2",
+            "LET-CST-StoRom"
+        ]
+    },
+    {
+        "name": "q020",
+        "attend": [
+            "LET-ITA-EleLinGenFil",
+            "LET-GEO-Geo1",
+            "LET-CLE-LinLat",
+            "LET-CST-StoGre"
+        ]
+    },
+    {
+        "name": "q022",
+        "attend": [
+            "LET-ITA-EleLinGenFil",
+            "LET-GEO-Geo1",
+            "LET-CLE-LinLat",
+            "LET-CST-StoRom"
+        ]
+    },
+    {
+        "name": "q023",
+        "attend": [
+            "LET-ITA-LetIta2",
+            "LET-FIL-StoSci",
+            "LET-STO-StoMed1"
+        ]
+    },
+    {
+        "name": "q024",
+        "attend": [
+            "CBC-ARC-ArcCriMed",
+            "LET-FIL-Est"
+        ]
+    },
+    {
+        "name": "q025",
+        "attend": [
+            "CBC-ARC-Geo1",
+            "CBC-ARC-LinLat",
+            "LET-STO-StoMed1",
+            "CBC-ART-ArcStoArtMusA"
+        ]
+    },
+    {
+        "name": "q026",
+        "attend": [
+            "CBC-ARC-Geo1",
+            "CBC-ARC-LinLat",
+            "LET-STO-StoMed1",
+            "CBC-ART-StoProArtCulMatMed"
+        ]
+    },
+    {
+        "name": "q027",
+        "attend": [
+            "CBC-ARC-Geo1",
+            "CBC-ARC-LinLat",
+            "LET-STO-StoMed1",
+            "CBC-ART-StoArcMed"
+        ]
+    },
+    {
+        "name": "q028",
+        "attend": [
+            "CBC-ART-EleInfSciCatBenCul",
+            "CBC-ART-StoRes",
+            "CBC-ART-StoCriArt",
+            "CBC-ART-ArcStoArtMusA"
+        ]
+    },
+    {
+        "name": "q029",
+        "attend": [
+            "CBC-ART-EleInfSciCatBenCul",
+            "CBC-ART-StoRes",
+            "CBC-ART-StoCriArt",
+            "CBC-ART-StoDisGra"
+        ]
+    },
+    {
+        "name": "q030",
+        "attend": [
+            "CBC-ART-MatCarCosResEdiSto",
+            "CBC-ART-StoMus",
+            "LET-FIL-Est",
+            "CBC-ART-StoArcCon"
+        ]
+    },
+    {
+        "name": "q031",
+        "attend": [
+            "CBC-ART-MatCarCosResEdiSto",
+            "CBC-ART-StoMus",
+            "CBC-ART-SocArt",
+            "CBC-ART-StoArcCon"
+        ]
+    },
+    {
+        "name": "q032",
+        "attend": [
+            "CBC-ART-MatCarCosResEdiSto",
+            "CBC-ART-StoCriCin",
+            "LET-FIL-Est",
+            "CBC-ART-StoArcCon"
+        ]
+    },
+    {
+        "name": "q033",
+        "attend": [
+            "CBC-ART-MatCarCosResEdiSto",
+            "CBC-ART-StoCriCin",
+            "CBC-ART-SocArt",
+            "CBC-ART-StoArcCon"
+        ]
+    },
+    {
+        "name": "q034",
+        "attend": [
+            "CBC-ART-MatCarCosResEdiSto",
+            "CBC-ART-StoTecFot",
+            "LET-FIL-Est",
+            "CBC-ART-StoArcCon"
+        ]
+    },
+    {
+        "name": "q035",
+        "attend": [
+            "CBC-ART-MatCarCosResEdiSto",
+            "CBC-ART-StoTecFot",
+            "CBC-ART-SocArt",
+            "CBC-ART-StoArcCon"
+        ]
+    },
+    {
+        "name": "q036",
+        "attend": [
+            "LET-CST-StoGre",
+            "CBC-ARC-Geo1",
+            "CBC-ARC-LinLat",
+            "CBC-ARC-Palantro"
+        ]
+    },
+    {
+        "name": "q037",
+        "attend": [
+            "LET-CST-StoRom",
+            "CBC-ARC-TopRilMonAnt",
+            "LET-CLE-LinGre",
+            "CBC-ARC-ArcCla2"
+        ]
+    },
+    {
+        "name": "q038",
+        "attend": [
+            "LET-CST-StoRom",
+            "CBC-ARC-TopRilMonAnt",
+            "LET-CLE-LinGre",
+            "CBC-ARC-ArcCriMed"
+        ]
+    },
+    {
+        "name": "q039",
+        "attend": [
+            "CBC-ARC-MatTecAppArc",
+            "CBC-ARC-EtrAntIta",
+            "LET-CLE-Glo"
+        ]
+    },
+    {
+        "name": "q040",
+        "attend": [
+            "CBC-ARC-MatTecAppArc",
+            "CBC-ARC-EtrAntIta",
+            "CBC-LIB-InfDoc"
+        ]
+    },
+    {
+        "name": "q041",
+        "attend": [
+            "CBC-ARC-MatTecAppArc",
+            "LET-STO-StoMed1",
+            "LET-CLE-Glo"
+        ]
+    },
+    {
+        "name": "q042",
+        "attend": [
+            "CBC-ARC-MatTecAppArc",
+            "LET-STO-StoMed1",
+            "CBC-LIB-InfDoc"
+        ]
+    },
+    {
+        "name": "q043",
+        "attend": [
+            "CBC-LIB-Arc",
+            "CBC-ARC-Geo1",
+            "CBC-ARC-LinLat",
+            "LET-STO-StoMed1"
+        ]
+    },
+    {
+        "name": "q044",
+        "attend": [
+            "CBC-LIB-PalLat",
+            "CBC-LIB-ArcSpe",
+            "CBC-ART-StoTecArt"
+        ]
+    },
+    {
+        "name": "q045",
+        "attend": [
+            "CBC-LIB-PalLat",
+            "CBC-LIB-InfDoc"
+        ]
+    },
+    {
+        "name": "q046",
+        "attend": [
+            "CBC-LIB-PalLat",
+            "CBC-LIB-StoLibSta"
+        ]
+    },
+    {
+        "name": "q047",
+        "attend": [
+            "CBC-LIB-PalLat",
+            "LET-STO-StoMed1"
+        ]
+    },
+    {
+        "name": "q048",
+        "attend": [
+            "CBC-LIB-ArcSpe",
+            "CBC-LIB-Cod"
+        ]
+    },
+    {
+        "name": "q049",
+        "attend": [
+            "CBC-LIB-ArcSpe",
+            "CBC-LIB-StoBib"
+        ]
+    },
+    {
+        "name": "q050",
+        "attend": [
+            "CBC-LIB-InfDoc",
+            "CBC-LIB-Cod"
+        ]
+    },
+    {
+        "name": "q051",
+        "attend": [
+            "CBC-LIB-InfDoc",
+            "CBC-LIB-StoBib"
+        ]
+    },
+    {
+        "name": "q052",
+        "attend": [
+            "CBC-LIB-StoLibSta",
+            "CBC-LIB-Cod"
+        ]
+    },
+    {
+        "name": "q053",
+        "attend": [
+            "CBC-LIB-StoLibSta",
+            "CBC-LIB-StoBib"
+        ]
+    },
+    {
+        "name": "q054",
+        "attend": [
+            "LET-STO-StoMed1",
+            "CBC-LIB-Cod"
+        ]
+    },
+    {
+        "name": "q055",
+        "attend": [
+            "LET-STO-StoMed1",
+            "CBC-LIB-StoBib"
+        ]
+    },
+    {
+        "name": "t000",
+        "attend": [
+            "LET-STO-StoMed2"
+        ]
+    },
+    {
+        "name": "t001",
+        "attend": [
+            "LET-STO-StoMed1"
+        ]
+    },
+    {
+        "name": "t002",
+        "attend": [
+            "LET-ITA-LinIta"
+        ]
+    },
+    {
+        "name": "t003",
+        "attend": [
+            "LET-ITA-LetIta2"
+        ]
+    },
+    {
+        "name": "t004",
+        "attend": [
+            "LET-ITA-EleLinGenFil"
+        ]
+    },
+    {
+        "name": "t005",
+        "attend": [
+            "LET-GEO-StoCriCin"
+        ]
+    },
+    {
+        "name": "t006",
+        "attend": [
+            "LET-GEO-Geo2"
+        ]
+    },
+    {
+        "name": "t007",
+        "attend": [
+            "LET-GEO-Geo1"
+        ]
+    },
+    {
+        "name": "t008",
+        "attend": [
+            "LET-FIL-StoSci"
+        ]
+    },
+    {
+        "name": "t009",
+        "attend": [
+            "LET-FIL-Est"
+        ]
+    },
+    {
+        "name": "t010",
+        "attend": [
+            "LET-CST-StoRom"
+        ]
+    },
+    {
+        "name": "t011",
+        "attend": [
+            "LET-CST-StoGre"
+        ]
+    },
+    {
+        "name": "t012",
+        "attend": [
+            "LET-CST-EpiLat"
+        ]
+    },
+    {
+        "name": "t013",
+        "attend": [
+            "LET-CLE-LinLetGre2"
+        ]
+    },
+    {
+        "name": "t014",
+        "attend": [
+            "LET-CLE-LinLat"
+        ]
+    },
+    {
+        "name": "t015",
+        "attend": [
+            "LET-CLE-LinGre"
+        ]
+    },
+    {
+        "name": "t016",
+        "attend": [
+            "LET-CLE-Glo"
+        ]
+    },
+    {
+        "name": "t017",
+        "attend": [
+            "LET-CLE-FilCla"
+        ]
+    },
+    {
+        "name": "t018",
+        "attend": [
+            "CBC-LIB-StoLibSta"
+        ]
+    },
+    {
+        "name": "t019",
+        "attend": [
+            "CBC-LIB-StoBib"
+        ]
+    },
+    {
+        "name": "t020",
+        "attend": [
+            "CBC-LIB-PalLat"
+        ]
+    },
+    {
+        "name": "t021",
+        "attend": [
+            "CBC-LIB-InfDoc"
+        ]
+    },
+    {
+        "name": "t022",
+        "attend": [
+            "CBC-LIB-Cod"
+        ]
+    },
+    {
+        "name": "t023",
+        "attend": [
+            "CBC-LIB-ArcSpe"
+        ]
+    },
+    {
+        "name": "t024",
+        "attend": [
+            "CBC-LIB-Arc"
+        ]
+    },
+    {
+        "name": "t025",
+        "attend": [
+            "CBC-ART-StoTecFot"
+        ]
+    },
+    {
+        "name": "t026",
+        "attend": [
+            "CBC-ART-StoTecArt"
+        ]
+    },
+    {
+        "name": "t027",
+        "attend": [
+            "CBC-ART-StoRes"
+        ]
+    },
+    {
+        "name": "t028",
+        "attend": [
+            "CBC-ART-StoProArtCulMatMed"
+        ]
+    },
+    {
+        "name": "t029",
+        "attend": [
+            "CBC-ART-StoMus"
+        ]
+    },
+    {
+        "name": "t030",
+        "attend": [
+            "CBC-ART-StoDisGra"
+        ]
+    },
+    {
+        "name": "t031",
+        "attend": [
+            "CBC-ART-StoCriCin"
+        ]
+    },
+    {
+        "name": "t032",
+        "attend": [
+            "CBC-ART-StoCriArt"
+        ]
+    },
+    {
+        "name": "t033",
+        "attend": [
+            "CBC-ART-StoArcMed"
+        ]
+    },
+    {
+        "name": "t034",
+        "attend": [
+            "CBC-ART-StoArcCon"
+        ]
+    },
+    {
+        "name": "t035",
+        "attend": [
+            "CBC-ART-SocArt"
+        ]
+    },
+    {
+        "name": "t036",
+        "attend": [
+            "CBC-ART-MatCarCosResEdiSto"
+        ]
+    },
+    {
+        "name": "t037",
+        "attend": [
+            "CBC-ART-EleInfSciCatBenCul"
+        ]
+    },
+    {
+        "name": "t038",
+        "attend": [
+            "CBC-ART-ArcStoArtMusA"
+        ]
+    },
+    {
+        "name": "t039",
+        "attend": [
+            "CBC-ARC-TopRilMonAnt"
+        ]
+    },
+    {
+        "name": "t040",
+        "attend": [
+            "CBC-ARC-Palantro"
+        ]
+    },
+    {
+        "name": "t041",
+        "attend": [
+            "CBC-ARC-MatTecAppArc"
+        ]
+    },
+    {
+        "name": "t042",
+        "attend": [
+            "CBC-ARC-LinLat"
+        ]
+    },
+    {
+        "name": "t043",
+        "attend": [
+            "CBC-ARC-Geo1"
+        ]
+    },
+    {
+        "name": "t044",
+        "attend": [
+            "CBC-ARC-EtrAntIta"
+        ]
+    },
+    {
+        "name": "t045",
+        "attend": [
+            "CBC-ARC-ArcCriMed"
+        ]
+    },
+    {
+        "name": "t046",
+        "attend": [
+            "CBC-ARC-ArcCla2"
+        ]
+    }
+]

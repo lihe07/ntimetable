@@ -1,0 +1,2977 @@
+{
+    "room_distance": [
+        {}
+    ],
+    "event_time_distance": [
+        {
+            "kind": "max",
+            "event": "LET-STO-StoMed2",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "LET-STO-StoMed2",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "LET-STO-StoMed2",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "LET-STO-StoMed2",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "LET-STO-StoMed2",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "LET-STO-StoMed2",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "LET-STO-StoMed2",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "LET-STO-StoMed1",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "LET-STO-StoMed1",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "LET-STO-StoMed1",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "LET-STO-StoMed1",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "LET-STO-StoMed1",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "LET-STO-StoMed1",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "LET-STO-StoMed1",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "LET-ITA-LinIta",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "LET-ITA-LinIta",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "LET-ITA-LinIta",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "LET-ITA-LinIta",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "LET-ITA-LinIta",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "LET-ITA-LinIta",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "LET-ITA-LinIta",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "LET-ITA-LetIta2",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "LET-ITA-LetIta2",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "LET-ITA-LetIta2",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "LET-ITA-LetIta2",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "LET-ITA-LetIta2",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "LET-ITA-LetIta2",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "LET-ITA-LetIta2",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "LET-ITA-EleLinGenFil",
+            "time": 0
+        },
+        {
+            "kind": "max",
+            "event": "LET-ITA-EleLinGenFil",
+            "time": 1
+        },
+        {
+            "kind": "max",
+            "event": "LET-ITA-EleLinGenFil",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "LET-ITA-EleLinGenFil",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "LET-ITA-EleLinGenFil",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "LET-ITA-EleLinGenFil",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "LET-ITA-EleLinGenFil",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "LET-ITA-EleLinGenFil",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "LET-ITA-EleLinGenFil",
+            "time": 0
+        },
+        {
+            "kind": "max",
+            "event": "LET-ITA-EleLinGenFil",
+            "time": 1
+        },
+        {
+            "kind": "max",
+            "event": "LET-ITA-EleLinGenFil",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "LET-ITA-EleLinGenFil",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "LET-ITA-EleLinGenFil",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "LET-ITA-EleLinGenFil",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "LET-ITA-EleLinGenFil",
+            "time": 0
+        },
+        {
+            "kind": "max",
+            "event": "LET-ITA-EleLinGenFil",
+            "time": 1
+        },
+        {
+            "kind": "max",
+            "event": "LET-ITA-EleLinGenFil",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "LET-ITA-EleLinGenFil",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "LET-ITA-EleLinGenFil",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "LET-ITA-EleLinGenFil",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "LET-ITA-EleLinGenFil",
+            "time": 0
+        },
+        {
+            "kind": "max",
+            "event": "LET-ITA-EleLinGenFil",
+            "time": 1
+        },
+        {
+            "kind": "max",
+            "event": "LET-ITA-EleLinGenFil",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "LET-ITA-EleLinGenFil",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "LET-ITA-EleLinGenFil",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "LET-ITA-EleLinGenFil",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "LET-GEO-StoCriCin",
+            "time": 0
+        },
+        {
+            "kind": "max",
+            "event": "LET-GEO-StoCriCin",
+            "time": 1
+        },
+        {
+            "kind": "max",
+            "event": "LET-GEO-StoCriCin",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "LET-GEO-StoCriCin",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "LET-GEO-StoCriCin",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "LET-GEO-StoCriCin",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "LET-GEO-StoCriCin",
+            "time": 0
+        },
+        {
+            "kind": "max",
+            "event": "LET-GEO-StoCriCin",
+            "time": 1
+        },
+        {
+            "kind": "max",
+            "event": "LET-GEO-StoCriCin",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "LET-GEO-StoCriCin",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "LET-GEO-StoCriCin",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "LET-GEO-StoCriCin",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "LET-GEO-StoCriCin",
+            "time": 0
+        },
+        {
+            "kind": "max",
+            "event": "LET-GEO-StoCriCin",
+            "time": 1
+        },
+        {
+            "kind": "max",
+            "event": "LET-GEO-StoCriCin",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "LET-GEO-StoCriCin",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "LET-GEO-StoCriCin",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "LET-GEO-StoCriCin",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "LET-GEO-StoCriCin",
+            "time": 0
+        },
+        {
+            "kind": "max",
+            "event": "LET-GEO-StoCriCin",
+            "time": 1
+        },
+        {
+            "kind": "max",
+            "event": "LET-GEO-StoCriCin",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "LET-GEO-StoCriCin",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "LET-GEO-StoCriCin",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "LET-GEO-StoCriCin",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "LET-GEO-Geo2",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "LET-GEO-Geo2",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "LET-GEO-Geo2",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "LET-GEO-Geo2",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "LET-GEO-Geo2",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "LET-GEO-Geo2",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "LET-GEO-Geo2",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "LET-GEO-Geo1",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "LET-GEO-Geo1",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "LET-GEO-Geo1",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "LET-GEO-Geo1",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "LET-GEO-Geo1",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "LET-GEO-Geo1",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "LET-GEO-Geo1",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "LET-FIL-StoSci",
+            "time": 0
+        },
+        {
+            "kind": "max",
+            "event": "LET-FIL-StoSci",
+            "time": 1
+        },
+        {
+            "kind": "max",
+            "event": "LET-FIL-StoSci",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "LET-FIL-StoSci",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "LET-FIL-StoSci",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "LET-FIL-StoSci",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "LET-FIL-StoSci",
+            "time": 0
+        },
+        {
+            "kind": "max",
+            "event": "LET-FIL-StoSci",
+            "time": 1
+        },
+        {
+            "kind": "max",
+            "event": "LET-FIL-StoSci",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "LET-FIL-StoSci",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "LET-FIL-StoSci",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "LET-FIL-StoSci",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "LET-FIL-StoSci",
+            "time": 0
+        },
+        {
+            "kind": "max",
+            "event": "LET-FIL-StoSci",
+            "time": 1
+        },
+        {
+            "kind": "max",
+            "event": "LET-FIL-StoSci",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "LET-FIL-StoSci",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "LET-FIL-StoSci",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "LET-FIL-StoSci",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "LET-FIL-StoSci",
+            "time": 0
+        },
+        {
+            "kind": "max",
+            "event": "LET-FIL-StoSci",
+            "time": 1
+        },
+        {
+            "kind": "max",
+            "event": "LET-FIL-StoSci",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "LET-FIL-StoSci",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "LET-FIL-StoSci",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "LET-FIL-StoSci",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "LET-FIL-Est",
+            "time": 0
+        },
+        {
+            "kind": "max",
+            "event": "LET-FIL-Est",
+            "time": 1
+        },
+        {
+            "kind": "max",
+            "event": "LET-FIL-Est",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "LET-FIL-Est",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "LET-FIL-Est",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "LET-FIL-Est",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "LET-FIL-Est",
+            "time": 0
+        },
+        {
+            "kind": "max",
+            "event": "LET-FIL-Est",
+            "time": 1
+        },
+        {
+            "kind": "max",
+            "event": "LET-FIL-Est",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "LET-FIL-Est",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "LET-FIL-Est",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "LET-FIL-Est",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "LET-FIL-Est",
+            "time": 0
+        },
+        {
+            "kind": "max",
+            "event": "LET-FIL-Est",
+            "time": 1
+        },
+        {
+            "kind": "max",
+            "event": "LET-FIL-Est",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "LET-FIL-Est",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "LET-FIL-Est",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "LET-FIL-Est",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "LET-FIL-Est",
+            "time": 0
+        },
+        {
+            "kind": "max",
+            "event": "LET-FIL-Est",
+            "time": 1
+        },
+        {
+            "kind": "max",
+            "event": "LET-FIL-Est",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "LET-FIL-Est",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "LET-FIL-Est",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "LET-FIL-Est",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "LET-CST-StoRom",
+            "time": 0
+        },
+        {
+            "kind": "max",
+            "event": "LET-CST-StoRom",
+            "time": 1
+        },
+        {
+            "kind": "max",
+            "event": "LET-CST-StoRom",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "LET-CST-StoRom",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "LET-CST-StoRom",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "LET-CST-StoRom",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "LET-CST-StoRom",
+            "time": 0
+        },
+        {
+            "kind": "max",
+            "event": "LET-CST-StoRom",
+            "time": 1
+        },
+        {
+            "kind": "max",
+            "event": "LET-CST-StoRom",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "LET-CST-StoRom",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "LET-CST-StoRom",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "LET-CST-StoRom",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "LET-CST-StoRom",
+            "time": 0
+        },
+        {
+            "kind": "max",
+            "event": "LET-CST-StoRom",
+            "time": 1
+        },
+        {
+            "kind": "max",
+            "event": "LET-CST-StoRom",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "LET-CST-StoRom",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "LET-CST-StoRom",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "LET-CST-StoRom",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "LET-CST-StoRom",
+            "time": 0
+        },
+        {
+            "kind": "max",
+            "event": "LET-CST-StoRom",
+            "time": 1
+        },
+        {
+            "kind": "max",
+            "event": "LET-CST-StoRom",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "LET-CST-StoRom",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "LET-CST-StoRom",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "LET-CST-StoRom",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "LET-CST-StoGre",
+            "time": 0
+        },
+        {
+            "kind": "max",
+            "event": "LET-CST-StoGre",
+            "time": 1
+        },
+        {
+            "kind": "max",
+            "event": "LET-CST-StoGre",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "LET-CST-StoGre",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "LET-CST-StoGre",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "LET-CST-StoGre",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "LET-CST-StoGre",
+            "time": 0
+        },
+        {
+            "kind": "max",
+            "event": "LET-CST-StoGre",
+            "time": 1
+        },
+        {
+            "kind": "max",
+            "event": "LET-CST-StoGre",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "LET-CST-StoGre",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "LET-CST-StoGre",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "LET-CST-StoGre",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "LET-CST-StoGre",
+            "time": 0
+        },
+        {
+            "kind": "max",
+            "event": "LET-CST-StoGre",
+            "time": 1
+        },
+        {
+            "kind": "max",
+            "event": "LET-CST-StoGre",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "LET-CST-StoGre",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "LET-CST-StoGre",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "LET-CST-StoGre",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "LET-CST-StoGre",
+            "time": 0
+        },
+        {
+            "kind": "max",
+            "event": "LET-CST-StoGre",
+            "time": 1
+        },
+        {
+            "kind": "max",
+            "event": "LET-CST-StoGre",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "LET-CST-StoGre",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "LET-CST-StoGre",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "LET-CST-StoGre",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "LET-CST-EpiLat",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "LET-CST-EpiLat",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "LET-CST-EpiLat",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "LET-CST-EpiLat",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "LET-CST-EpiLat",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "LET-CST-EpiLat",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "LET-CST-EpiLat",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "LET-CLE-LinLetGre2",
+            "time": 0
+        },
+        {
+            "kind": "max",
+            "event": "LET-CLE-LinLetGre2",
+            "time": 1
+        },
+        {
+            "kind": "max",
+            "event": "LET-CLE-LinLetGre2",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "LET-CLE-LinLetGre2",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "LET-CLE-LinLetGre2",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "LET-CLE-LinLetGre2",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "LET-CLE-LinLetGre2",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "LET-CLE-LinLetGre2",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "LET-CLE-LinLetGre2",
+            "time": 0
+        },
+        {
+            "kind": "max",
+            "event": "LET-CLE-LinLetGre2",
+            "time": 1
+        },
+        {
+            "kind": "max",
+            "event": "LET-CLE-LinLetGre2",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "LET-CLE-LinLetGre2",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "LET-CLE-LinLetGre2",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "LET-CLE-LinLetGre2",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "LET-CLE-LinLetGre2",
+            "time": 0
+        },
+        {
+            "kind": "max",
+            "event": "LET-CLE-LinLetGre2",
+            "time": 1
+        },
+        {
+            "kind": "max",
+            "event": "LET-CLE-LinLetGre2",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "LET-CLE-LinLetGre2",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "LET-CLE-LinLetGre2",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "LET-CLE-LinLetGre2",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "LET-CLE-LinLetGre2",
+            "time": 0
+        },
+        {
+            "kind": "max",
+            "event": "LET-CLE-LinLetGre2",
+            "time": 1
+        },
+        {
+            "kind": "max",
+            "event": "LET-CLE-LinLetGre2",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "LET-CLE-LinLetGre2",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "LET-CLE-LinLetGre2",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "LET-CLE-LinLetGre2",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "LET-CLE-LinLat",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "LET-CLE-LinLat",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "LET-CLE-LinLat",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "LET-CLE-LinLat",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "LET-CLE-LinLat",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "LET-CLE-LinLat",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "LET-CLE-LinLat",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "LET-CLE-LinGre",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "LET-CLE-LinGre",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "LET-CLE-LinGre",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "LET-CLE-LinGre",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "LET-CLE-LinGre",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "LET-CLE-LinGre",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "LET-CLE-LinGre",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "LET-CLE-Glo",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "LET-CLE-Glo",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "LET-CLE-Glo",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "LET-CLE-Glo",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "LET-CLE-Glo",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "LET-CLE-Glo",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "LET-CLE-Glo",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "LET-CLE-FilCla",
+            "time": 0
+        },
+        {
+            "kind": "max",
+            "event": "LET-CLE-FilCla",
+            "time": 1
+        },
+        {
+            "kind": "max",
+            "event": "LET-CLE-FilCla",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "LET-CLE-FilCla",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "LET-CLE-FilCla",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "LET-CLE-FilCla",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "LET-CLE-FilCla",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "LET-CLE-FilCla",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "LET-CLE-FilCla",
+            "time": 0
+        },
+        {
+            "kind": "max",
+            "event": "LET-CLE-FilCla",
+            "time": 1
+        },
+        {
+            "kind": "max",
+            "event": "LET-CLE-FilCla",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "LET-CLE-FilCla",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "LET-CLE-FilCla",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "LET-CLE-FilCla",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "LET-CLE-FilCla",
+            "time": 0
+        },
+        {
+            "kind": "max",
+            "event": "LET-CLE-FilCla",
+            "time": 1
+        },
+        {
+            "kind": "max",
+            "event": "LET-CLE-FilCla",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "LET-CLE-FilCla",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "LET-CLE-FilCla",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "LET-CLE-FilCla",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "LET-CLE-FilCla",
+            "time": 0
+        },
+        {
+            "kind": "max",
+            "event": "LET-CLE-FilCla",
+            "time": 1
+        },
+        {
+            "kind": "max",
+            "event": "LET-CLE-FilCla",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "LET-CLE-FilCla",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "LET-CLE-FilCla",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "LET-CLE-FilCla",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-StoLibSta",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-StoLibSta",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-StoLibSta",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-StoLibSta",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-StoLibSta",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-StoLibSta",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-StoLibSta",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-StoBib",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-StoBib",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-StoBib",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-StoBib",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-StoBib",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-StoBib",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-StoBib",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-PalLat",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-PalLat",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-PalLat",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-PalLat",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-PalLat",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-PalLat",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-PalLat",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-InfDoc",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-InfDoc",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-InfDoc",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-InfDoc",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-InfDoc",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-InfDoc",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-InfDoc",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-Cod",
+            "time": 0
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-Cod",
+            "time": 1
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-Cod",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-Cod",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-Cod",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-Cod",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-Cod",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-Cod",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-Cod",
+            "time": 0
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-Cod",
+            "time": 1
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-Cod",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-Cod",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-Cod",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-Cod",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-Cod",
+            "time": 0
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-Cod",
+            "time": 1
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-Cod",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-Cod",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-Cod",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-Cod",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-Cod",
+            "time": 0
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-Cod",
+            "time": 1
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-Cod",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-Cod",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-Cod",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-Cod",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-ArcSpe",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-ArcSpe",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-ArcSpe",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-ArcSpe",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-ArcSpe",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-ArcSpe",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-ArcSpe",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-Arc",
+            "time": 0
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-Arc",
+            "time": 1
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-Arc",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-Arc",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-Arc",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-Arc",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-Arc",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-Arc",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-Arc",
+            "time": 0
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-Arc",
+            "time": 1
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-Arc",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-Arc",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-Arc",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-Arc",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-Arc",
+            "time": 0
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-Arc",
+            "time": 1
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-Arc",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-Arc",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-Arc",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-Arc",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-Arc",
+            "time": 0
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-Arc",
+            "time": 1
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-Arc",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-Arc",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-Arc",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "CBC-LIB-Arc",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoTecFot",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoTecFot",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoTecFot",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoTecFot",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoTecFot",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoTecFot",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoTecFot",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoTecArt",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoTecArt",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoTecArt",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoTecArt",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoTecArt",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoTecArt",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoTecArt",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoRes",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoRes",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoRes",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoRes",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoRes",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoRes",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoRes",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoProArtCulMatMed",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoProArtCulMatMed",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoProArtCulMatMed",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoProArtCulMatMed",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoProArtCulMatMed",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoProArtCulMatMed",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoProArtCulMatMed",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoMus",
+            "time": 0
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoMus",
+            "time": 1
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoMus",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoMus",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoMus",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoMus",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoMus",
+            "time": 0
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoMus",
+            "time": 1
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoMus",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoMus",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoMus",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoMus",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoMus",
+            "time": 0
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoMus",
+            "time": 1
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoMus",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoMus",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoMus",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoMus",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoMus",
+            "time": 0
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoMus",
+            "time": 1
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoMus",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoMus",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoMus",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoMus",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoDisGra",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoDisGra",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoDisGra",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoDisGra",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoDisGra",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoDisGra",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoDisGra",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoCriCin",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoCriCin",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoCriCin",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoCriCin",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoCriCin",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoCriCin",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoCriCin",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoCriArt",
+            "time": 0
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoCriArt",
+            "time": 1
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoCriArt",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoCriArt",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoCriArt",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoCriArt",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoCriArt",
+            "time": 0
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoCriArt",
+            "time": 1
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoCriArt",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoCriArt",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoCriArt",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoCriArt",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoCriArt",
+            "time": 0
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoCriArt",
+            "time": 1
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoCriArt",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoCriArt",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoCriArt",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoCriArt",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoCriArt",
+            "time": 0
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoCriArt",
+            "time": 1
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoCriArt",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoCriArt",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoCriArt",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoCriArt",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoArcMed",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoArcMed",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoArcMed",
+            "time": 0
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoArcMed",
+            "time": 1
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoArcMed",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoArcMed",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoArcMed",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoArcMed",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoArcMed",
+            "time": 0
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoArcMed",
+            "time": 1
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoArcMed",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoArcMed",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoArcMed",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoArcMed",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoArcMed",
+            "time": 0
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoArcMed",
+            "time": 1
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoArcMed",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoArcMed",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoArcMed",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoArcMed",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoArcCon",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoArcCon",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoArcCon",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoArcCon",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoArcCon",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoArcCon",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-StoArcCon",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-SocArt",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-SocArt",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-SocArt",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-SocArt",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-SocArt",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-SocArt",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-SocArt",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-MatCarCosResEdiSto",
+            "time": 0
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-MatCarCosResEdiSto",
+            "time": 1
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-MatCarCosResEdiSto",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-MatCarCosResEdiSto",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-MatCarCosResEdiSto",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-MatCarCosResEdiSto",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-MatCarCosResEdiSto",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-MatCarCosResEdiSto",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-MatCarCosResEdiSto",
+            "time": 0
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-MatCarCosResEdiSto",
+            "time": 1
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-MatCarCosResEdiSto",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-MatCarCosResEdiSto",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-MatCarCosResEdiSto",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-MatCarCosResEdiSto",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-MatCarCosResEdiSto",
+            "time": 0
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-MatCarCosResEdiSto",
+            "time": 1
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-MatCarCosResEdiSto",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-MatCarCosResEdiSto",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-MatCarCosResEdiSto",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-MatCarCosResEdiSto",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-MatCarCosResEdiSto",
+            "time": 0
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-MatCarCosResEdiSto",
+            "time": 1
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-MatCarCosResEdiSto",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-MatCarCosResEdiSto",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-MatCarCosResEdiSto",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-MatCarCosResEdiSto",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-EleInfSciCatBenCul",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-EleInfSciCatBenCul",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-EleInfSciCatBenCul",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-EleInfSciCatBenCul",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-EleInfSciCatBenCul",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-EleInfSciCatBenCul",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-EleInfSciCatBenCul",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-ArcStoArtMusA",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-ArcStoArtMusA",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-ArcStoArtMusA",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-ArcStoArtMusA",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-ArcStoArtMusA",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-ArcStoArtMusA",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ART-ArcStoArtMusA",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ARC-TopRilMonAnt",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ARC-TopRilMonAnt",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ARC-TopRilMonAnt",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ARC-TopRilMonAnt",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ARC-TopRilMonAnt",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ARC-TopRilMonAnt",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ARC-TopRilMonAnt",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ARC-Palantro",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ARC-Palantro",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ARC-Palantro",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ARC-Palantro",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ARC-Palantro",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ARC-Palantro",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ARC-Palantro",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ARC-MatTecAppArc",
+            "time": 0
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ARC-MatTecAppArc",
+            "time": 1
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ARC-MatTecAppArc",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ARC-MatTecAppArc",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ARC-MatTecAppArc",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ARC-MatTecAppArc",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ARC-MatTecAppArc",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ARC-MatTecAppArc",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ARC-MatTecAppArc",
+            "time": 0
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ARC-MatTecAppArc",
+            "time": 1
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ARC-MatTecAppArc",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ARC-MatTecAppArc",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ARC-MatTecAppArc",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ARC-MatTecAppArc",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ARC-MatTecAppArc",
+            "time": 0
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ARC-MatTecAppArc",
+            "time": 1
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ARC-MatTecAppArc",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ARC-MatTecAppArc",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ARC-MatTecAppArc",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ARC-MatTecAppArc",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ARC-MatTecAppArc",
+            "time": 0
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ARC-MatTecAppArc",
+            "time": 1
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ARC-MatTecAppArc",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ARC-MatTecAppArc",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ARC-MatTecAppArc",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ARC-MatTecAppArc",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ARC-LinLat",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ARC-LinLat",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ARC-LinLat",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ARC-LinLat",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ARC-LinLat",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ARC-LinLat",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ARC-LinLat",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ARC-Geo1",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ARC-Geo1",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ARC-Geo1",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ARC-Geo1",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ARC-Geo1",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ARC-Geo1",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ARC-Geo1",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ARC-EtrAntIta",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ARC-EtrAntIta",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ARC-EtrAntIta",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ARC-EtrAntIta",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ARC-EtrAntIta",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ARC-EtrAntIta",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ARC-EtrAntIta",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ARC-ArcCriMed",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ARC-ArcCriMed",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ARC-ArcCriMed",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ARC-ArcCriMed",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ARC-ArcCriMed",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ARC-ArcCriMed",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ARC-ArcCriMed",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ARC-ArcCla2",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ARC-ArcCla2",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ARC-ArcCla2",
+            "time": 5
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ARC-ArcCla2",
+            "time": 2
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ARC-ArcCla2",
+            "time": 3
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ARC-ArcCla2",
+            "time": 4
+        },
+        {
+            "kind": "max",
+            "event": "CBC-ARC-ArcCla2",
+            "time": 5
+        }
+    ]
+}

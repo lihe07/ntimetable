@@ -1,0 +1,1909 @@
+[
+    {
+        "name": "q000",
+        "attend": [
+            "LinGen",
+            "LinLatA",
+            "Geo1"
+        ]
+    },
+    {
+        "name": "q001",
+        "attend": [
+            "LinIta",
+            "ItaScr",
+            "Archiv"
+        ]
+    },
+    {
+        "name": "q002",
+        "attend": [
+            "LinIta",
+            "ItaScr",
+            "Codico"
+        ]
+    },
+    {
+        "name": "q003",
+        "attend": [
+            "LinIta",
+            "ItaScr",
+            "PalLat"
+        ]
+    },
+    {
+        "name": "q004",
+        "attend": [
+            "LinIta",
+            "ItaScr",
+            "StoLibSta"
+        ]
+    },
+    {
+        "name": "q005",
+        "attend": [
+            "Esteti",
+            "StoMus",
+            "Cartog",
+            "LabScr"
+        ]
+    },
+    {
+        "name": "q006",
+        "attend": [
+            "LinGen",
+            "LinGreA",
+            "LinLatA",
+            "Geo1"
+        ]
+    },
+    {
+        "name": "q007",
+        "attend": [
+            "Glotto",
+            "LinLetGre1",
+            "StoGre",
+            "ArcCla1",
+            "ItaScr"
+        ]
+    },
+    {
+        "name": "q008",
+        "attend": [
+            "FilCla2",
+            "LinLetLat2",
+            "LetCriAnt",
+            "StoRom"
+        ]
+    },
+    {
+        "name": "q010",
+        "attend": [
+            "LinLetGre1",
+            "StoGre",
+            "StoRom",
+            "ArcCla1",
+            "ItaScr"
+        ]
+    },
+    {
+        "name": "q011",
+        "attend": [
+            "Glotto",
+            "EpiLat",
+            "LetCriAnt"
+        ]
+    },
+    {
+        "name": "q012",
+        "attend": [
+            "Glotto",
+            "EpiLat",
+            "TopRilMonAnt"
+        ]
+    },
+    {
+        "name": "q014",
+        "attend": [
+            "FilCla2",
+            "EpiLat",
+            "LetCriAnt"
+        ]
+    },
+    {
+        "name": "q015",
+        "attend": [
+            "FilCla2",
+            "EpiLat",
+            "TopRilMonAnt"
+        ]
+    },
+    {
+        "name": "q017",
+        "attend": [
+            "LinGen",
+            "LinLatA",
+            "Geo1",
+            "FonSoc",
+            "AntCul"
+        ]
+    },
+    {
+        "name": "q018",
+        "attend": [
+            "ItaScr",
+            "Sociol1",
+            "AntCul"
+        ]
+    },
+    {
+        "name": "q019",
+        "attend": [
+            "StoMus",
+            "LinIta",
+            "Sociol1"
+        ]
+    },
+    {
+        "name": "q020",
+        "attend": [
+            "StoMus",
+            "LinIta",
+            "AntCul"
+        ]
+    },
+    {
+        "name": "q021",
+        "attend": [
+            "StoCriCin",
+            "LinIta",
+            "Sociol1"
+        ]
+    },
+    {
+        "name": "q022",
+        "attend": [
+            "StoCriCin",
+            "LinIta",
+            "AntCul"
+        ]
+    },
+    {
+        "name": "q024",
+        "attend": [
+            "ItaScr",
+            "Archiv",
+            "PalLat"
+        ]
+    },
+    {
+        "name": "q025",
+        "attend": [
+            "StoMed2",
+            "StoMod2",
+            "StoRom"
+        ]
+    },
+    {
+        "name": "q026",
+        "attend": [
+            "StoMed2",
+            "StoMod2",
+            "LetCriAnt"
+        ]
+    },
+    {
+        "name": "q027",
+        "attend": [
+            "LetCriAnt",
+            "FonSoc",
+            "AntCul"
+        ]
+    },
+    {
+        "name": "q028",
+        "attend": [
+            "ItaScr",
+            "Esteti",
+            "ArcCriMed"
+        ]
+    },
+    {
+        "name": "q029",
+        "attend": [
+            "ItaScr",
+            "FonSoc",
+            "AntCul",
+            "ArcCriMed"
+        ]
+    },
+    {
+        "name": "q030",
+        "attend": [
+            "Geo1",
+            "LinLatB",
+            "StoArcMed",
+            "StoTecArtM12"
+        ]
+    },
+    {
+        "name": "q031",
+        "attend": [
+            "Geo1",
+            "LinLatB",
+            "StoArcMed",
+            "StoTecArtM3"
+        ]
+    },
+    {
+        "name": "q032",
+        "attend": [
+            "Geo1",
+            "LinLatB",
+            "StoProArtCulMatMed",
+            "StoTecArtM12"
+        ]
+    },
+    {
+        "name": "q034",
+        "attend": [
+            "Geo1",
+            "LinLatB",
+            "ArcStoArtMus",
+            "StoTecArtM12"
+        ]
+    },
+    {
+        "name": "q035",
+        "attend": [
+            "Geo1",
+            "LinLatB",
+            "ArcStoArtMus",
+            "StoTecArtM3"
+        ]
+    },
+    {
+        "name": "q036",
+        "attend": [
+            "MetRicStoArt",
+            "StoCriArt",
+            "StoRes",
+            "EleInfSciCatBenCulM2"
+        ]
+    },
+    {
+        "name": "q037",
+        "attend": [
+            "MetRicStoArt",
+            "StoCriArt",
+            "StoRes",
+            "EleInfSciCatBenCulM3"
+        ]
+    },
+    {
+        "name": "q038",
+        "attend": [
+            "StoColIstMus",
+            "StoCriArt",
+            "StoRes",
+            "EleInfSciCatBenCulM2"
+        ]
+    },
+    {
+        "name": "q039",
+        "attend": [
+            "StoColIstMus",
+            "StoCriArt",
+            "StoRes",
+            "EleInfSciCatBenCulM3"
+        ]
+    },
+    {
+        "name": "q040",
+        "attend": [
+            "StoDisGra",
+            "StoCriArt",
+            "StoRes",
+            "EleInfSciCatBenCulM2"
+        ]
+    },
+    {
+        "name": "q041",
+        "attend": [
+            "StoDisGra",
+            "StoCriArt",
+            "StoRes",
+            "EleInfSciCatBenCulM3"
+        ]
+    },
+    {
+        "name": "q042",
+        "attend": [
+            "ArcStoArtMus",
+            "StoCriArt",
+            "StoRes",
+            "EleInfSciCatBenCulM2"
+        ]
+    },
+    {
+        "name": "q043",
+        "attend": [
+            "ArcStoArtMus",
+            "StoCriArt",
+            "StoRes",
+            "EleInfSciCatBenCulM3"
+        ]
+    },
+    {
+        "name": "q044",
+        "attend": [
+            "StoArcCon",
+            "MatCarCosResEdiSto",
+            "StoCriCin",
+            "SocArt"
+        ]
+    },
+    {
+        "name": "q045",
+        "attend": [
+            "StoArcCon",
+            "MatCarCosResEdiSto",
+            "StoTecFot",
+            "SocArt"
+        ]
+    },
+    {
+        "name": "q046",
+        "attend": [
+            "StoArcCon",
+            "MatCarCosResEdiSto",
+            "StoMus",
+            "SocArt"
+        ]
+    },
+    {
+        "name": "q047",
+        "attend": [
+            "StoArcCon",
+            "MatCarCosResEdiSto",
+            "StoCriCin",
+            "Esteti"
+        ]
+    },
+    {
+        "name": "q048",
+        "attend": [
+            "StoArcCon",
+            "MatCarCosResEdiSto",
+            "StoTecFot",
+            "Esteti"
+        ]
+    },
+    {
+        "name": "q049",
+        "attend": [
+            "StoArcCon",
+            "MatCarCosResEdiSto",
+            "StoMus",
+            "Esteti"
+        ]
+    },
+    {
+        "name": "q050",
+        "attend": [
+            "StoGre",
+            "ArcCla1",
+            "Geo1",
+            "LinLatB",
+            "Paleoa"
+        ]
+    },
+    {
+        "name": "q051",
+        "attend": [
+            "StoRom",
+            "ArcCla2",
+            "TopRilMonAnt",
+            "LinGreA"
+        ]
+    },
+    {
+        "name": "q052",
+        "attend": [
+            "StoRom",
+            "ArcCriMed",
+            "TopRilMonAnt",
+            "LinGreA"
+        ]
+    },
+    {
+        "name": "q053",
+        "attend": [
+            "StoRom",
+            "ArcVicOriAnt",
+            "TopRilMonAnt",
+            "LinGreA"
+        ]
+    },
+    {
+        "name": "q054",
+        "attend": [
+            "EtrAntIta",
+            "LetCriAnt",
+            "Glotto",
+            "MatCarCosResEdiSto"
+        ]
+    },
+    {
+        "name": "q055",
+        "attend": [
+            "EtrAntIta",
+            "AntCul",
+            "Glotto",
+            "MatCarCosResEdiSto"
+        ]
+    },
+    {
+        "name": "q056",
+        "attend": [
+            "EtrAntIta",
+            "LetCriAnt",
+            "InfDoc",
+            "MatCarCosResEdiSto"
+        ]
+    },
+    {
+        "name": "q057",
+        "attend": [
+            "EtrAntIta",
+            "AntCul",
+            "InfDoc",
+            "MatCarCosResEdiSto"
+        ]
+    },
+    {
+        "name": "q058",
+        "attend": [
+            "EtrAntIta",
+            "LetCriAnt",
+            "Glotto",
+            "MatTecAppArcM3"
+        ]
+    },
+    {
+        "name": "q059",
+        "attend": [
+            "EtrAntIta",
+            "AntCul",
+            "Glotto",
+            "MatTecAppArcM3"
+        ]
+    },
+    {
+        "name": "q060",
+        "attend": [
+            "EtrAntIta",
+            "LetCriAnt",
+            "InfDoc",
+            "MatTecAppArcM3"
+        ]
+    },
+    {
+        "name": "q061",
+        "attend": [
+            "EtrAntIta",
+            "AntCul",
+            "InfDoc",
+            "MatTecAppArcM3"
+        ]
+    },
+    {
+        "name": "q062",
+        "attend": [
+            "Archiv",
+            "Geo1",
+            "LinLatB"
+        ]
+    },
+    {
+        "name": "q063",
+        "attend": [
+            "PalLat",
+            "InfDoc",
+            "StoMus"
+        ]
+    },
+    {
+        "name": "q064",
+        "attend": [
+            "PalLat",
+            "InfDoc",
+            "StoCriCin"
+        ]
+    },
+    {
+        "name": "q065",
+        "attend": [
+            "PalLat",
+            "InfDoc",
+            "StoTecFot"
+        ]
+    },
+    {
+        "name": "q066",
+        "attend": [
+            "PalLat",
+            "LinLetGre1",
+            "StoMus"
+        ]
+    },
+    {
+        "name": "q067",
+        "attend": [
+            "PalLat",
+            "LinLetGre1",
+            "StoCriCin"
+        ]
+    },
+    {
+        "name": "q068",
+        "attend": [
+            "PalLat",
+            "LinLetGre1",
+            "StoTecFot"
+        ]
+    },
+    {
+        "name": "q069",
+        "attend": [
+            "PalLat",
+            "StoLibSta",
+            "StoMus"
+        ]
+    },
+    {
+        "name": "q070",
+        "attend": [
+            "PalLat",
+            "StoLibSta",
+            "StoCriCin"
+        ]
+    },
+    {
+        "name": "q071",
+        "attend": [
+            "PalLat",
+            "StoLibSta",
+            "StoTecFot"
+        ]
+    },
+    {
+        "name": "q072",
+        "attend": [
+            "InfDoc",
+            "Codico",
+            "LinLetGre1"
+        ]
+    },
+    {
+        "name": "q073",
+        "attend": [
+            "InfDoc",
+            "Codico",
+            "StoLibSta"
+        ]
+    },
+    {
+        "name": "q074",
+        "attend": [
+            "InfDoc",
+            "Codico",
+            "StoBib"
+        ]
+    },
+    {
+        "name": "q075",
+        "attend": [
+            "InfDoc",
+            "LinLetGre1",
+            "StoLibSta"
+        ]
+    },
+    {
+        "name": "q076",
+        "attend": [
+            "InfDoc",
+            "LinLetGre1",
+            "StoBib"
+        ]
+    },
+    {
+        "name": "q077",
+        "attend": [
+            "InfDoc",
+            "StoLibSta",
+            "StoBib"
+        ]
+    },
+    {
+        "name": "q078",
+        "attend": [
+            "StoLibSta",
+            "Codico",
+            "LinLetGre1"
+        ]
+    },
+    {
+        "name": "q079",
+        "attend": [
+            "StoLibSta",
+            "Codico",
+            "StoBib"
+        ]
+    },
+    {
+        "name": "q080",
+        "attend": [
+            "StoLibSta",
+            "LinLetGre1",
+            "StoBib"
+        ]
+    },
+    {
+        "name": "q081",
+        "attend": [
+            "Sociol1",
+            "InfDoc",
+            "PsiTur",
+            "AntCul",
+            "StoRom",
+            "StoArc"
+        ]
+    },
+    {
+        "name": "q082",
+        "attend": [
+            "LegBenCul2",
+            "EcoAzi",
+            "GeoTur",
+            "StoColIstMus",
+            "StoTecFot"
+        ]
+    },
+    {
+        "name": "q083",
+        "attend": [
+            "Sociol1",
+            "InfDoc",
+            "PsiTur",
+            "AntCul",
+            "StoMed2",
+            "StoArt"
+        ]
+    },
+    {
+        "name": "q084",
+        "attend": [
+            "Sociol1",
+            "InfDoc",
+            "PsiTur",
+            "AntCul",
+            "StoMod2",
+            "StoArt"
+        ]
+    },
+    {
+        "name": "q085",
+        "attend": [
+            "LegBenCul2",
+            "EcoAzi",
+            "GeoTur",
+            "StoColIstMus",
+            "StoTecFot",
+            "StoMed2"
+        ]
+    },
+    {
+        "name": "q086",
+        "attend": [
+            "LegBenCul2",
+            "EcoAzi",
+            "GeoTur",
+            "StoColIstMus",
+            "StoTecFot",
+            "StoMod2"
+        ]
+    },
+    {
+        "name": "q091",
+        "attend": [
+            "StoGre",
+            "FilTeo",
+            "LogFilMat",
+            "Esteti"
+        ]
+    },
+    {
+        "name": "q092",
+        "attend": [
+            "StoRom",
+            "FilTeo",
+            "LogFilMat",
+            "Esteti"
+        ]
+    },
+    {
+        "name": "q093",
+        "attend": [
+            "StoMed2",
+            "FilTeo",
+            "LogFilMat",
+            "Esteti"
+        ]
+    },
+    {
+        "name": "q094",
+        "attend": [
+            "StoLinItaCS",
+            "Archiv",
+            "StoModCS",
+            "StoFilMedCS",
+            "StoCriCin"
+        ]
+    },
+    {
+        "name": "q095",
+        "attend": [
+            "StoLinItaCS",
+            "Archiv",
+            "StoFriCS",
+            "StoFilMedCS",
+            "StoCriCin"
+        ]
+    },
+    {
+        "name": "q096",
+        "attend": [
+            "StoLinItaCS",
+            "Archiv",
+            "StoConCS",
+            "StoFilMedCS",
+            "StoCriCin"
+        ]
+    },
+    {
+        "name": "q097",
+        "attend": [
+            "StoLinItaCS",
+            "Archiv",
+            "StoAntStaItaCS",
+            "StoFilMedCS",
+            "StoCriCin"
+        ]
+    },
+    {
+        "name": "q098",
+        "attend": [
+            "StoLinItaCS",
+            "PalLat",
+            "StoModCS",
+            "StoFilMedCS",
+            "StoCriCin"
+        ]
+    },
+    {
+        "name": "q099",
+        "attend": [
+            "StoLinItaCS",
+            "PalLat",
+            "StoFriCS",
+            "StoFilMedCS",
+            "StoCriCin"
+        ]
+    },
+    {
+        "name": "q100",
+        "attend": [
+            "StoLinItaCS",
+            "PalLat",
+            "StoConCS",
+            "StoFilMedCS",
+            "StoCriCin"
+        ]
+    },
+    {
+        "name": "q101",
+        "attend": [
+            "StoLinItaCS",
+            "PalLat",
+            "StoAntStaItaCS",
+            "StoFilMedCS",
+            "StoCriCin"
+        ]
+    },
+    {
+        "name": "q102",
+        "attend": [
+            "StoLinItaCS",
+            "StoLibSta",
+            "StoModCS",
+            "StoFilMedCS",
+            "StoCriCin"
+        ]
+    },
+    {
+        "name": "q103",
+        "attend": [
+            "StoLinItaCS",
+            "StoLibSta",
+            "StoFriCS",
+            "StoFilMedCS",
+            "StoCriCin"
+        ]
+    },
+    {
+        "name": "q104",
+        "attend": [
+            "StoLinItaCS",
+            "StoLibSta",
+            "StoConCS",
+            "StoFilMedCS",
+            "StoCriCin"
+        ]
+    },
+    {
+        "name": "q105",
+        "attend": [
+            "StoLinItaCS",
+            "StoLibSta",
+            "StoAntStaItaCS",
+            "StoFilMedCS",
+            "StoCriCin"
+        ]
+    },
+    {
+        "name": "q106",
+        "attend": [
+            "StoLinItaCS",
+            "Archiv",
+            "StoModCS",
+            "StoFilCS",
+            "StoCriCin"
+        ]
+    },
+    {
+        "name": "q107",
+        "attend": [
+            "StoLinItaCS",
+            "Archiv",
+            "StoFriCS",
+            "StoFilCS",
+            "StoCriCin"
+        ]
+    },
+    {
+        "name": "q108",
+        "attend": [
+            "StoLinItaCS",
+            "Archiv",
+            "StoConCS",
+            "StoFilCS",
+            "StoCriCin"
+        ]
+    },
+    {
+        "name": "q109",
+        "attend": [
+            "StoLinItaCS",
+            "Archiv",
+            "StoAntStaItaCS",
+            "StoFilCS",
+            "StoCriCin"
+        ]
+    },
+    {
+        "name": "q110",
+        "attend": [
+            "StoLinItaCS",
+            "PalLat",
+            "StoModCS",
+            "StoFilCS",
+            "StoCriCin"
+        ]
+    },
+    {
+        "name": "q111",
+        "attend": [
+            "StoLinItaCS",
+            "PalLat",
+            "StoFriCS",
+            "StoFilCS",
+            "StoCriCin"
+        ]
+    },
+    {
+        "name": "q112",
+        "attend": [
+            "StoLinItaCS",
+            "PalLat",
+            "StoConCS",
+            "StoFilCS",
+            "StoCriCin"
+        ]
+    },
+    {
+        "name": "q113",
+        "attend": [
+            "StoLinItaCS",
+            "PalLat",
+            "StoAntStaItaCS",
+            "StoFilCS",
+            "StoCriCin"
+        ]
+    },
+    {
+        "name": "q114",
+        "attend": [
+            "StoLinItaCS",
+            "StoLibSta",
+            "StoModCS",
+            "StoFilCS",
+            "StoCriCin"
+        ]
+    },
+    {
+        "name": "q115",
+        "attend": [
+            "StoLinItaCS",
+            "StoLibSta",
+            "StoFriCS",
+            "StoFilCS",
+            "StoCriCin"
+        ]
+    },
+    {
+        "name": "q116",
+        "attend": [
+            "StoLinItaCS",
+            "StoLibSta",
+            "StoConCS",
+            "StoFilCS",
+            "StoCriCin"
+        ]
+    },
+    {
+        "name": "q117",
+        "attend": [
+            "StoLinItaCS",
+            "StoLibSta",
+            "StoAntStaItaCS",
+            "StoFilCS",
+            "StoCriCin"
+        ]
+    },
+    {
+        "name": "q118",
+        "attend": [
+            "LinLetLat2"
+        ]
+    },
+    {
+        "name": "q119",
+        "attend": [
+            "LinLetLat2",
+            "StoRomCS",
+            "PalLat",
+            "EpiLat",
+            "FilCla2"
+        ]
+    },
+    {
+        "name": "q120",
+        "attend": [
+            "LinLetLat2",
+            "StoRomCS",
+            "PalLat",
+            "EpiLat",
+            "LetCriAnt"
+        ]
+    },
+    {
+        "name": "q121",
+        "attend": [
+            "LinLetLat2",
+            "StoRomCS",
+            "PalLat",
+            "EpiLat",
+            "LinLetLatCS"
+        ]
+    },
+    {
+        "name": "q123",
+        "attend": [
+            "LinLetLat2",
+            "StoRomCS",
+            "PalLat",
+            "EpiLat",
+            "FilCla2",
+            "LetCriAnt"
+        ]
+    },
+    {
+        "name": "q124",
+        "attend": [
+            "LinLetLat2",
+            "StoRomCS",
+            "PalLat",
+            "EpiLat",
+            "FilCla2",
+            "LinLetLatCS"
+        ]
+    },
+    {
+        "name": "q126",
+        "attend": [
+            "LinLetLat2",
+            "StoRomCS",
+            "PalLat",
+            "EpiLat",
+            "LetCriAnt",
+            "LinLetLatCS"
+        ]
+    },
+    {
+        "name": "q129",
+        "attend": [
+            "LinLetLatCS",
+            "PapiroCS",
+            "StoFilMedCS"
+        ]
+    },
+    {
+        "name": "q130",
+        "attend": [
+            "LinLetLatCS",
+            "PapiroCS",
+            "TedUma"
+        ]
+    },
+    {
+        "name": "q131",
+        "attend": [
+            "LetCriAnt",
+            "PapiroCS",
+            "StoFilMedCS"
+        ]
+    },
+    {
+        "name": "q132",
+        "attend": [
+            "LetCriAnt",
+            "PapiroCS",
+            "TedUma"
+        ]
+    },
+    {
+        "name": "q133",
+        "attend": [
+            "LinLetLat2",
+            "FilCla2",
+            "StoRom",
+            "ArcCla2",
+            "ArcVicOriAnt",
+            "EtrAntIta"
+        ]
+    },
+    {
+        "name": "q134",
+        "attend": [
+            "LinLetLat2",
+            "FilCla2",
+            "StoRom",
+            "ArcCla2",
+            "ArcVicOriAnt",
+            "TopRilMonAnt"
+        ]
+    },
+    {
+        "name": "q135",
+        "attend": [
+            "LinLetLat2",
+            "FilCla2",
+            "StoRom",
+            "ArcCla2",
+            "TopRilMonAnt",
+            "EtrAntIta"
+        ]
+    },
+    {
+        "name": "q136",
+        "attend": [
+            "LinLetLat2",
+            "FilCla2",
+            "StoRom",
+            "ArcVicOriAnt",
+            "EtrAntIta",
+            "TopRilMonAnt"
+        ]
+    },
+    {
+        "name": "q137",
+        "attend": [
+            "LinLetLat2",
+            "Glotto",
+            "StoRom",
+            "ArcCla2",
+            "ArcVicOriAnt",
+            "EtrAntIta"
+        ]
+    },
+    {
+        "name": "q138",
+        "attend": [
+            "LinLetLat2",
+            "Glotto",
+            "StoRom",
+            "ArcCla2",
+            "ArcVicOriAnt",
+            "TopRilMonAnt"
+        ]
+    },
+    {
+        "name": "q139",
+        "attend": [
+            "LinLetLat2",
+            "Glotto",
+            "StoRom",
+            "ArcCla2",
+            "TopRilMonAnt",
+            "EtrAntIta"
+        ]
+    },
+    {
+        "name": "q140",
+        "attend": [
+            "LinLetLat2",
+            "Glotto",
+            "StoRom",
+            "ArcVicOriAnt",
+            "EtrAntIta",
+            "TopRilMonAnt"
+        ]
+    },
+    {
+        "name": "q141",
+        "attend": [
+            "StoRomCS",
+            "PapiroCS",
+            "TedUma"
+        ]
+    },
+    {
+        "name": "q142",
+        "attend": [
+            "StoRom",
+            "LetCriAnt",
+            "ArcStoArtMus",
+            "StoFriCS",
+            "StoAntStaItaCS",
+            "StoMus",
+            "StoCriCin",
+            "StoConCS",
+            "StoFilMedCS",
+            "StoFilCS"
+        ]
+    },
+    {
+        "name": "q143",
+        "attend": [
+            "Sociol1",
+            "AntCul",
+            "StoModCS",
+            "StoFriCS",
+            "StoAntStaItaCS",
+            "StoArcMed",
+            "StoProArtCulMatMed",
+            "StoColIstMus",
+            "StoArcCon"
+        ]
+    },
+    {
+        "name": "q144A",
+        "attend": [
+            "StoArtMod2CS",
+            "StoArtCon2CS",
+            "ArcCla1",
+            "ArcCla2",
+            "ArcCriMed",
+            "LegBenCul2",
+            "AntCul",
+            "StoCriArt"
+        ]
+    },
+    {
+        "name": "q144B",
+        "attend": [
+            "StoTecArtCS",
+            "StoArcMed",
+            "StoProArtCulMatMed",
+            "ArcStoArtMus",
+            "MetRicStoArt",
+            "StoColIstMus",
+            "StoDisGra",
+            "StoArcCon"
+        ]
+    },
+    {
+        "name": "q145A",
+        "attend": [
+            "StoCriCin",
+            "StoTecFot",
+            "StoMus",
+            "StoArtMod2CS",
+            "StoArtCon2CS",
+            "StoCriArt",
+            "StoTecArtCS",
+            "StoArcMed"
+        ]
+    },
+    {
+        "name": "q145B",
+        "attend": [
+            "StoArcMed",
+            "StoProArtCulMatMed",
+            "ArcStoArtMus",
+            "MetRicStoArt",
+            "StoColIstMus",
+            "StoDisGra",
+            "StoArcCon"
+        ]
+    },
+    {
+        "name": "q146",
+        "attend": [
+            "EtrAntIta",
+            "ArcClaCS",
+            "ProMedCS",
+            "ArcMedCS",
+            "NumismCS",
+            "OrientCS",
+            "PapiroCS",
+            "StoRomCS",
+            "BioarcCS"
+        ]
+    },
+    {
+        "name": "q147",
+        "attend": [
+            "BioarcCS"
+        ]
+    },
+    {
+        "name": "q148",
+        "attend": [
+            "ArchivCS",
+            "StoLibStaCSM1",
+            "StoLibStaCSM2",
+            "LegBenCul2"
+        ]
+    },
+    {
+        "name": "q149",
+        "attend": [
+            "ArchivCS",
+            "CodicoCS",
+            "LegBenCul2"
+        ]
+    },
+    {
+        "name": "q150",
+        "attend": [
+            "StoLibStaCSM1",
+            "StoLibStaCSM2",
+            "CodicoCS",
+            "LegBenCul2"
+        ]
+    },
+    {
+        "name": "q151",
+        "attend": [
+            "ArchivCS",
+            "StoLibStaCSM1",
+            "StoLibStaCSM2"
+        ]
+    },
+    {
+        "name": "q152",
+        "attend": [
+            "ArchivCS",
+            "PapiroCS"
+        ]
+    },
+    {
+        "name": "q153",
+        "attend": [
+            "ArchivCS",
+            "ChiResCS"
+        ]
+    },
+    {
+        "name": "q154",
+        "attend": [
+            "CodicoCS",
+            "ArchivCS"
+        ]
+    },
+    {
+        "name": "q155",
+        "attend": [
+            "CodicoCS",
+            "StoLibStaCSM1",
+            "StoLibStaCSM2"
+        ]
+    },
+    {
+        "name": "q156",
+        "attend": [
+            "CodicoCS",
+            "PapiroCS"
+        ]
+    },
+    {
+        "name": "q157",
+        "attend": [
+            "CodicoCS",
+            "ChiResCS"
+        ]
+    },
+    {
+        "name": "q158",
+        "attend": [
+            "StoLibStaCSM1",
+            "StoLibStaCSM2",
+            "PapiroCS"
+        ]
+    },
+    {
+        "name": "q159",
+        "attend": [
+            "StoLibStaCSM1",
+            "StoLibStaCSM2",
+            "ChiResCS"
+        ]
+    },
+    {
+        "name": "q160",
+        "attend": [
+            "PapiroCS",
+            "ChiResCS"
+        ]
+    },
+    {
+        "name": "t000",
+        "attend": [
+            "AntCul"
+        ]
+    },
+    {
+        "name": "t001",
+        "attend": [
+            "ArcClaCS"
+        ]
+    },
+    {
+        "name": "t002",
+        "attend": [
+            "ArcCla1"
+        ]
+    },
+    {
+        "name": "t001",
+        "attend": [
+            "ArcCla2"
+        ]
+    },
+    {
+        "name": "t003",
+        "attend": [
+            "ArcCriMed"
+        ]
+    },
+    {
+        "name": "t004",
+        "attend": [
+            "ArcVicOriAnt"
+        ]
+    },
+    {
+        "name": "t005",
+        "attend": [
+            "ArcStoArtMus"
+        ]
+    },
+    {
+        "name": "t003",
+        "attend": [
+            "ArcMedCS"
+        ]
+    },
+    {
+        "name": "t006",
+        "attend": [
+            "Archiv"
+        ]
+    },
+    {
+        "name": "t006",
+        "attend": [
+            "ArchivCS"
+        ]
+    },
+    {
+        "name": "t007",
+        "attend": [
+            "BioarcCS"
+        ]
+    },
+    {
+        "name": "t008",
+        "attend": [
+            "Cartog"
+        ]
+    },
+    {
+        "name": "t009",
+        "attend": [
+            "ChiResCS"
+        ]
+    },
+    {
+        "name": "t010",
+        "attend": [
+            "Codico"
+        ]
+    },
+    {
+        "name": "t010",
+        "attend": [
+            "CodicoCS"
+        ]
+    },
+    {
+        "name": "t011",
+        "attend": [
+            "EcoAzi"
+        ]
+    },
+    {
+        "name": "t012",
+        "attend": [
+            "EleInfSciCatBenCulM2"
+        ]
+    },
+    {
+        "name": "t013",
+        "attend": [
+            "EleInfSciCatBenCulM3"
+        ]
+    },
+    {
+        "name": "t014",
+        "attend": [
+            "EpiLat"
+        ]
+    },
+    {
+        "name": "t015",
+        "attend": [
+            "Esteti"
+        ]
+    },
+    {
+        "name": "t016",
+        "attend": [
+            "EtrAntIta"
+        ]
+    },
+    {
+        "name": "t017",
+        "attend": [
+            "FilCla2"
+        ]
+    },
+    {
+        "name": "t018",
+        "attend": [
+            "FilTeo"
+        ]
+    },
+    {
+        "name": "t019",
+        "attend": [
+            "FonSoc"
+        ]
+    },
+    {
+        "name": "t020",
+        "attend": [
+            "GeoTur"
+        ]
+    },
+    {
+        "name": "t021",
+        "attend": [
+            "Geo1"
+        ]
+    },
+    {
+        "name": "t022",
+        "attend": [
+            "Glotto"
+        ]
+    },
+    {
+        "name": "t023",
+        "attend": [
+            "InfDoc"
+        ]
+    },
+    {
+        "name": "t024",
+        "attend": [
+            "ItaScr"
+        ]
+    },
+    {
+        "name": "t024",
+        "attend": [
+            "LabScr"
+        ]
+    },
+    {
+        "name": "t025",
+        "attend": [
+            "LegBenCul2"
+        ]
+    },
+    {
+        "name": "t026",
+        "attend": [
+            "LetCriAnt"
+        ]
+    },
+    {
+        "name": "t027",
+        "attend": [
+            "LinLetGre1"
+        ]
+    },
+    {
+        "name": "t028",
+        "attend": [
+            "LinLetLatCS"
+        ]
+    },
+    {
+        "name": "t028",
+        "attend": [
+            "LinLetLat2"
+        ]
+    },
+    {
+        "name": "t029",
+        "attend": [
+            "LinGreA"
+        ]
+    },
+    {
+        "name": "t030",
+        "attend": [
+            "LinLatA"
+        ]
+    },
+    {
+        "name": "t031",
+        "attend": [
+            "LinLatB"
+        ]
+    },
+    {
+        "name": "t032",
+        "attend": [
+            "LinGen"
+        ]
+    },
+    {
+        "name": "t033",
+        "attend": [
+            "LinIta"
+        ]
+    },
+    {
+        "name": "t034",
+        "attend": [
+            "LogFilMat"
+        ]
+    },
+    {
+        "name": "t035",
+        "attend": [
+            "MatTecAppArcM3"
+        ]
+    },
+    {
+        "name": "t036",
+        "attend": [
+            "MatCarCosResEdiSto"
+        ]
+    },
+    {
+        "name": "t037",
+        "attend": [
+            "MetRicStoArt"
+        ]
+    },
+    {
+        "name": "t038",
+        "attend": [
+            "NumismCS"
+        ]
+    },
+    {
+        "name": "t039",
+        "attend": [
+            "OrientCS"
+        ]
+    },
+    {
+        "name": "t007",
+        "attend": [
+            "Paleoa"
+        ]
+    },
+    {
+        "name": "t040",
+        "attend": [
+            "PalLat"
+        ]
+    },
+    {
+        "name": "t041",
+        "attend": [
+            "PapiroCS"
+        ]
+    },
+    {
+        "name": "t042",
+        "attend": [
+            "ProMedCS"
+        ]
+    },
+    {
+        "name": "t043",
+        "attend": [
+            "PsiTur"
+        ]
+    },
+    {
+        "name": "t019",
+        "attend": [
+            "SocArt"
+        ]
+    },
+    {
+        "name": "t019",
+        "attend": [
+            "Sociol1"
+        ]
+    },
+    {
+        "name": "t044",
+        "attend": [
+            "StoConCS"
+        ]
+    },
+    {
+        "name": "t045",
+        "attend": [
+            "StoAntStaItaCS"
+        ]
+    },
+    {
+        "name": "t046",
+        "attend": [
+            "StoColIstMus"
+        ]
+    },
+    {
+        "name": "t047",
+        "attend": [
+            "StoDisGra"
+        ]
+    },
+    {
+        "name": "t048",
+        "attend": [
+            "StoFriCS"
+        ]
+    },
+    {
+        "name": "t049",
+        "attend": [
+            "StoLibSta"
+        ]
+    },
+    {
+        "name": "t050",
+        "attend": [
+            "StoLibStaCSM1"
+        ]
+    },
+    {
+        "name": "t051",
+        "attend": [
+            "StoLibStaCSM2"
+        ]
+    },
+    {
+        "name": "t052",
+        "attend": [
+            "StoRes"
+        ]
+    },
+    {
+        "name": "t002",
+        "attend": [
+            "StoArc"
+        ]
+    },
+    {
+        "name": "t053",
+        "attend": [
+            "StoArcCon"
+        ]
+    },
+    {
+        "name": "t054",
+        "attend": [
+            "StoArcMed"
+        ]
+    },
+    {
+        "name": "t055",
+        "attend": [
+            "StoArt"
+        ]
+    },
+    {
+        "name": "t056",
+        "attend": [
+            "StoCriArt"
+        ]
+    },
+    {
+        "name": "t057",
+        "attend": [
+            "StoFilCS"
+        ]
+    },
+    {
+        "name": "t058",
+        "attend": [
+            "StoFilMedCS"
+        ]
+    },
+    {
+        "name": "t033",
+        "attend": [
+            "StoLinItaCS"
+        ]
+    },
+    {
+        "name": "t059",
+        "attend": [
+            "StoMus"
+        ]
+    },
+    {
+        "name": "t060",
+        "attend": [
+            "StoProArtCulMatMed"
+        ]
+    },
+    {
+        "name": "t061",
+        "attend": [
+            "StoArtCon2CS"
+        ]
+    },
+    {
+        "name": "t062",
+        "attend": [
+            "StoArtMod2CS"
+        ]
+    },
+    {
+        "name": "t013",
+        "attend": [
+            "StoBib"
+        ]
+    },
+    {
+        "name": "t063",
+        "attend": [
+            "StoTecArtM12"
+        ]
+    },
+    {
+        "name": "t064",
+        "attend": [
+            "StoTecArtM3"
+        ]
+    },
+    {
+        "name": "t065",
+        "attend": [
+            "StoTecArtCS"
+        ]
+    },
+    {
+        "name": "t066",
+        "attend": [
+            "StoCriCin"
+        ]
+    },
+    {
+        "name": "t067",
+        "attend": [
+            "StoTecFot"
+        ]
+    },
+    {
+        "name": "t068",
+        "attend": [
+            "StoGre"
+        ]
+    },
+    {
+        "name": "t069",
+        "attend": [
+            "StoMed2"
+        ]
+    },
+    {
+        "name": "t070",
+        "attend": [
+            "StoModCS"
+        ]
+    },
+    {
+        "name": "t048",
+        "attend": [
+            "StoMod2"
+        ]
+    },
+    {
+        "name": "t071",
+        "attend": [
+            "StoRom"
+        ]
+    },
+    {
+        "name": "t071",
+        "attend": [
+            "StoRomCS"
+        ]
+    },
+    {
+        "name": "t072",
+        "attend": [
+            "TedUma"
+        ]
+    },
+    {
+        "name": "t073",
+        "attend": [
+            "TopRilMonAnt"
+        ]
+    }
+]

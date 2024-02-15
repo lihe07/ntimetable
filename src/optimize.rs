@@ -292,7 +292,7 @@ pub fn optimize_solution(s: TIMEMAP, project: &'static Project) -> Vec<TIMEMAP> 
         ctrlc_send.send(()).unwrap();
     }).expect("Error setting Ctrl-C handler");
 
-    for i in 0..500 {
+    for i in 0..50 {
         if ctrlc_recv.try_recv().is_ok() {
             break;
         }
