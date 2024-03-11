@@ -1,7 +1,7 @@
 use criterion::{black_box, criterion_group, criterion_main, Criterion};
 
 fn bench_initial(c: &mut Criterion) {
-    let project = ntimetable::project::Project::parse("./demo");
+    let project = ntimetable::project::Project::parse("./converted/comp20");
     c.bench_function("find_initial_solution_tabu", |b| {
         b.iter(|| {
             black_box(ntimetable::initial::find_initial_solution_tabu(
